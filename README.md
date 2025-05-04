@@ -4,9 +4,9 @@ Repositório para a disciplina IF66K - Oficina de Integração 2 - ESO71 (2025_0
 Projeto: Registro de presença em aulas pelos alunos que frequentam as oficinas de ensino do projeto ELLP (Ensino Lúdico de Logica e Programação)
 
 Autores:
- BEATRIZ EDUARDA SANTOS FREZATO
- BRUNA DE PAULA OLIVEIRA
- FABIAN SAROM UCHOA ROCABADO
+BEATRIZ EDUARDA SANTOS FREZATO
+BRUNA DE PAULA OLIVEIRA
+FABIAN SAROM UCHOA ROCABADO
 
 
 

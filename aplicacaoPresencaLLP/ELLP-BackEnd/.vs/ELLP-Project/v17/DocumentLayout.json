@@ -1,0 +1,325 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\ellp-project\\ellp-project\\ellp-project\\interfaces\\interfacesentidades\\iprofessorentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\interfaces\\interfacesentidades\\iprofessorentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\ellp-project\\ellp-project\\ellp-project\\interfaces\\interfacesrepositorio\\ioficinarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\interfaces\\interfacesrepositorio\\ioficinarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\ellp-project\\ellp-project\\ellp-project\\interfaces\\interfacesrepositorio\\imonitorrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\interfaces\\interfacesrepositorio\\imonitorrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\ellp-project\\ellp-project\\ellp-project\\interfaces\\interfacesentidades\\ioficinaentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\interfaces\\interfacesentidades\\ioficinaentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\ellp-project\\ellp-project\\ellp-project\\interfaces\\interfacesentidades\\ialunoentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\interfaces\\interfacesentidades\\ialunoentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\ellp-project\\ellp-project\\ellp-project\\interfaces\\interfacesentidades\\ifaltaentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\interfaces\\interfacesentidades\\ifaltaentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\ellp-project\\ellp-project\\ellp-project\\interfaces\\interfacesrepositorio\\ifaltarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\interfaces\\interfacesrepositorio\\ifaltarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\ellp-project\\ellp-project\\ellp-project\\interfaces\\interfacesrepositorio\\ialunorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\interfaces\\interfacesrepositorio\\ialunorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\ellp-project\\ellp-project\\ellp-project\\models\\alunomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\models\\alunomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\ellp-project\\ellp-project\\ellp-project\\models\\oficinamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\models\\oficinamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\ellp-project\\ellp-project\\ellp-project\\models\\monitormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\models\\monitormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\ellp-project\\ellp-project\\ellp-project\\models\\professormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\models\\professormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\ellp-project\\ellp-project\\ellp-project\\models\\faltamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\models\\faltamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\ellp-project\\ellp-project\\ellp-project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\ellp-project\\ellp-project\\ellp-project\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\ellp-project\\ellp-project\\ellp-project\\ellp-project.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\ellp-project.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\ellp-project\\ellp-project\\ellp-project\\interfaces\\interfacesentidades\\imonitorentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\interfaces\\interfacesentidades\\imonitorentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\ellp-project\\ellp-project\\ellp-project\\controllers\\monitorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\controllers\\monitorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IProfessorEntidade.cs",
+              "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Interfaces\\InterfacesEntidades\\IProfessorEntidade.cs",
+              "RelativeDocumentMoniker": "ELLP-Project\\Interfaces\\InterfacesEntidades\\IProfessorEntidade.cs",
+              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Interfaces\\InterfacesEntidades\\IProfessorEntidade.cs",
+              "RelativeToolTip": "ELLP-Project\\Interfaces\\InterfacesEntidades\\IProfessorEntidade.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T00:08:53.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IOficinaRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Interfaces\\InterfacesRepositorio\\IOficinaRepositorio.cs",
+              "RelativeDocumentMoniker": "ELLP-Project\\Interfaces\\InterfacesRepositorio\\IOficinaRepositorio.cs",
+              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Interfaces\\InterfacesRepositorio\\IOficinaRepositorio.cs",
+              "RelativeToolTip": "ELLP-Project\\Interfaces\\InterfacesRepositorio\\IOficinaRepositorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T00:06:39.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IOficinaEntidade.cs",
+              "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Interfaces\\InterfacesEntidades\\IOficinaEntidade.cs",
+              "RelativeDocumentMoniker": "ELLP-Project\\Interfaces\\InterfacesEntidades\\IOficinaEntidade.cs",
+              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Interfaces\\InterfacesEntidades\\IOficinaEntidade.cs",
+              "RelativeToolTip": "ELLP-Project\\Interfaces\\InterfacesEntidades\\IOficinaEntidade.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T23:59:26.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IMonitorRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Interfaces\\InterfacesRepositorio\\IMonitorRepositorio.cs",
+              "RelativeDocumentMoniker": "ELLP-Project\\Interfaces\\InterfacesRepositorio\\IMonitorRepositorio.cs",
+              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Interfaces\\InterfacesRepositorio\\IMonitorRepositorio.cs",
+              "RelativeToolTip": "ELLP-Project\\Interfaces\\InterfacesRepositorio\\IMonitorRepositorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T23:57:41.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IMonitorEntidade.cs",
+              "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Interfaces\\InterfacesEntidades\\IMonitorEntidade.cs",
+              "RelativeDocumentMoniker": "ELLP-Project\\Interfaces\\InterfacesEntidades\\IMonitorEntidade.cs",
+              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Interfaces\\InterfacesEntidades\\IMonitorEntidade.cs",
+              "RelativeToolTip": "ELLP-Project\\Interfaces\\InterfacesEntidades\\IMonitorEntidade.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T23:35:43.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IFaltaRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Interfaces\\InterfacesRepositorio\\IFaltaRepositorio.cs",
+              "RelativeDocumentMoniker": "ELLP-Project\\Interfaces\\InterfacesRepositorio\\IFaltaRepositorio.cs",
+              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Interfaces\\InterfacesRepositorio\\IFaltaRepositorio.cs",
+              "RelativeToolTip": "ELLP-Project\\Interfaces\\InterfacesRepositorio\\IFaltaRepositorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T23:08:26.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IAlunoRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Interfaces\\InterfacesRepositorio\\IAlunoRepositorio.cs",
+              "RelativeDocumentMoniker": "ELLP-Project\\Interfaces\\InterfacesRepositorio\\IAlunoRepositorio.cs",
+              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Interfaces\\InterfacesRepositorio\\IAlunoRepositorio.cs",
+              "RelativeToolTip": "ELLP-Project\\Interfaces\\InterfacesRepositorio\\IAlunoRepositorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T22:29:32.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IAlunoEntidade.cs",
+              "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Interfaces\\InterfacesEntidades\\IAlunoEntidade.cs",
+              "RelativeDocumentMoniker": "ELLP-Project\\Interfaces\\InterfacesEntidades\\IAlunoEntidade.cs",
+              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Interfaces\\InterfacesEntidades\\IAlunoEntidade.cs",
+              "RelativeToolTip": "ELLP-Project\\Interfaces\\InterfacesEntidades\\IAlunoEntidade.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAB+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T21:24:15.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MonitorModel.cs",
+              "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Models\\MonitorModel.cs",
+              "RelativeDocumentMoniker": "ELLP-Project\\Models\\MonitorModel.cs",
+              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Models\\MonitorModel.cs",
+              "RelativeToolTip": "ELLP-Project\\Models\\MonitorModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T20:09:21.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IFaltaEntidade.cs",
+              "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Interfaces\\InterfacesEntidades\\IFaltaEntidade.cs",
+              "RelativeDocumentMoniker": "ELLP-Project\\Interfaces\\InterfacesEntidades\\IFaltaEntidade.cs",
+              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Interfaces\\InterfacesEntidades\\IFaltaEntidade.cs",
+              "RelativeToolTip": "ELLP-Project\\Interfaces\\InterfacesEntidades\\IFaltaEntidade.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T22:06:42.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FaltaModel.cs",
+              "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Models\\FaltaModel.cs",
+              "RelativeDocumentMoniker": "ELLP-Project\\Models\\FaltaModel.cs",
+              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Models\\FaltaModel.cs",
+              "RelativeToolTip": "ELLP-Project\\Models\\FaltaModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T20:25:52.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OficinaModel.cs",
+              "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Models\\OficinaModel.cs",
+              "RelativeDocumentMoniker": "ELLP-Project\\Models\\OficinaModel.cs",
+              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Models\\OficinaModel.cs",
+              "RelativeToolTip": "ELLP-Project\\Models\\OficinaModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T20:09:09.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProfessorModel.cs",
+              "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Models\\ProfessorModel.cs",
+              "RelativeDocumentMoniker": "ELLP-Project\\Models\\ProfessorModel.cs",
+              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Models\\ProfessorModel.cs",
+              "RelativeToolTip": "ELLP-Project\\Models\\ProfessorModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T20:09:33.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AlunoModel.cs",
+              "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Models\\AlunoModel.cs",
+              "RelativeDocumentMoniker": "ELLP-Project\\Models\\AlunoModel.cs",
+              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Models\\AlunoModel.cs",
+              "RelativeToolTip": "ELLP-Project\\Models\\AlunoModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T20:06:26.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Program.cs",
+              "RelativeDocumentMoniker": "ELLP-Project\\Program.cs",
+              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Program.cs",
+              "RelativeToolTip": "ELLP-Project\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T20:47:16.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AlunoController.cs",
+              "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Controllers\\AlunoController.cs",
+              "RelativeDocumentMoniker": "ELLP-Project\\Controllers\\AlunoController.cs",
+              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Controllers\\AlunoController.cs",
+              "RelativeToolTip": "ELLP-Project\\Controllers\\AlunoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T20:42:03.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MonitorController.cs",
+              "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Controllers\\MonitorController.cs",
+              "RelativeDocumentMoniker": "ELLP-Project\\Controllers\\MonitorController.cs",
+              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\Controllers\\MonitorController.cs",
+              "RelativeToolTip": "ELLP-Project\\Controllers\\MonitorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T20:40:33.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ELLP-Project.csproj",
+              "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\ELLP-Project.csproj",
+              "RelativeDocumentMoniker": "ELLP-Project\\ELLP-Project.csproj",
+              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\ELLP-Project.csproj",
+              "RelativeToolTip": "ELLP-Project\\ELLP-Project.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-31T20:05:53.482Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

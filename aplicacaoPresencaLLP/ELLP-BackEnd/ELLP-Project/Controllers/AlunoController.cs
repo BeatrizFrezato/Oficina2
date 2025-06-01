@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using ELLP_Project.Models;
 using ELLP_Project.Interfaces.InterfacesRepositório;
-
+ 
 namespace ELLP_Project.Controllers
 {
     [ApiController]

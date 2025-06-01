@@ -8,8 +8,6 @@ namespace ELLP_Project.Interfaces.InterfacesEntidades
         void RemoverAlunoOficina(int AlunoId);
         void RemoverMonitorOficina(int  MonitorId);
         void AlterarProfessorOficina(ProfessorModel professor);
-        void RemoverProfessorOficina(int professorId);
-        void AdicionarProfessorOficina(ProfessorModel professor);
 
     }
 }

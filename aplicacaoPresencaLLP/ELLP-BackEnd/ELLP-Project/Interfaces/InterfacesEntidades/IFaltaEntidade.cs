@@ -6,9 +6,7 @@ namespace ELLP_Project.Interfaces.InterfacesEntidades
     {
         void FaltaJustificada();
         void FaltaNaoJustificada();
-        void DataFalta(DateOnly data);
         void AlterarData(DateOnly data);
-        void AdicionarJustificativa(string justificativa);
         void AlterarJustificativa(string justificativa);
         void AlterarAluno(AlunoModel aluno);
 

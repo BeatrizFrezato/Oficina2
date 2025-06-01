@@ -1,11 +1,38 @@
-﻿namespace ELLP_Project.Models
+﻿using ELLP_Project.Interfaces.InterfacesEntidades;
+
+namespace ELLP_Project.Models
 {
-    public class FaltaModel
+    public class FaltaModel : IFaltaEntidade
     {
-        public AlunoModel Aluno { get; set; }
+        public required AlunoModel Aluno { get; set; }
         public int FaltaId { get; set; }
-        public DateOnly DatasFaltas { get; set; }
-        public string JustificativaFalta { get; set; }
+        public DateOnly DataFalta { get; set; }
+        public string? JustificativaFalta { get; set; }
         public Boolean FaltaJustificada { get; set; }
+
+        public void AlterarAluno(AlunoModel aluno)
+        {
+            Aluno = aluno;
+        }
+
+        public void AlterarData(DateOnly data)
+        {
+            DataFalta = data;
+        }
+
+        public void AlterarJustificativa(string justificativa)
+        {
+            JustificativaFalta = justificativa;
+        }
+
+        public void FaltaNaoJustificada()
+        {
+            FaltaJustificada = false;
+        }
+
+        void IFaltaEntidade.FaltaJustificada()
+        {
+            FaltaJustificada |= true;
+        }
     }
 }

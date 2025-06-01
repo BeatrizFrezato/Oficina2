@@ -434,11 +434,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\ELLP-Project.csproj",
+      "projectUniqueName": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\ELLP-Project.csproj",
       "projectName": "ELLP-Project",
-      "projectPath": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\ELLP-Project.csproj",
+      "projectPath": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\ELLP-Project.csproj",
       "packagesPath": "C:\\Users\\raposo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\raposo\\Documents\\GitHub\\ELLP-Project\\ELLP-Project\\ELLP-Project\\obj\\",
+      "outputPath": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

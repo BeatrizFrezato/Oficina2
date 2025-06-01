@@ -1,13 +1,13 @@
 ﻿using ELLP_Project.Models;
 
-namespace ELLP_Project.Interfaces.InterfacesRepositorio
+namespace ELLP_Project.Persistence.Interfaces.InterfacesRepositorio
 {
     public interface IMonitorRepositorio
     {
         IEnumerable<MonitorModel> GetAllMonitor();
         MonitorModel? GetMonitorById(int id);
         void AdicionarMonitor(MonitorModel monitor);
-        void AlterarMonitor(int monitorId,MonitorModel monitor);
-        void DeleteMonitor(int monitorId);
+        bool AlterarMonitor(int monitorId, MonitorModel monitor);
+        bool DeleteMonitor(int monitorId);
     }
 }

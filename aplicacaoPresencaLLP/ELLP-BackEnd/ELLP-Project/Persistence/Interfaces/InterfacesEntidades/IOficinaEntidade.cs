@@ -1,12 +1,12 @@
 ﻿using ELLP_Project.Models;
 
-namespace ELLP_Project.Interfaces.InterfacesEntidades
+namespace ELLP_Project.Persistence.Interfaces.InterfacesEntidades
 {
     public interface IOficinaEntidade
     {
         void AlterarNomeOficina(string nome);
-        void RemoverAlunoOficina(int AlunoId);
-        void RemoverMonitorOficina(int  MonitorId);
+        bool RemoverAlunoOficina(int AlunoId);
+        bool RemoverMonitorOficina(int MonitorId);
         void AlterarProfessorOficina(ProfessorModel professor);
 
     }

@@ -1,4 +1,4 @@
-﻿using ELLP_Project.Interfaces.InterfacesEntidades;
+﻿using ELLP_Project.Persistence.Interfaces.InterfacesEntidades;
 
 namespace ELLP_Project.Models
 {
@@ -20,15 +20,20 @@ namespace ELLP_Project.Models
             Professor = professor;
         }
 
-        public void RemoverAlunoOficina(int AlunoId)
+        public bool RemoverAlunoOficina(int AlunoId)
         {
+            if (Alunos.FirstOrDefault(aluno => aluno.AlunoId == AlunoId) == null) { return false; }
             Alunos.RemoveAll(aluno => aluno.AlunoId == AlunoId);
-
+            return true;
         }
 
-        public void RemoverMonitorOficina(int MonitorId)
+        public bool RemoverMonitorOficina(int MonitorId)
         {
+            if (Monitores.FirstOrDefault(monitor => monitor.Id == MonitorId) == null)
+                return false;
+
             Monitores.RemoveAll(monitor => monitor.Id == MonitorId);
+            return true;
         }
     }
 }

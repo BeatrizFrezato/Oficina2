@@ -1,13 +1,13 @@
 ﻿using ELLP_Project.Models;
 
-namespace ELLP_Project.Interfaces.InterfacesRepositório
+namespace ELLP_Project.Persistence.Interfaces.InterfacesRepositorio
 {
     public interface IAlunoRepositorio
     {
         IEnumerable<AlunoModel> GetAllAlunos();
         AlunoModel? GetAlunoById(int id);
         void AdicionarAluno(AlunoModel aluno);
-        void AtualizarAluno(int alunoId, AlunoModel aluno);
-        void DeleteAluno(int id);
+        bool AtualizarAluno(int alunoId, AlunoModel aluno);
+        bool DeleteAluno(int id);
     }
 }

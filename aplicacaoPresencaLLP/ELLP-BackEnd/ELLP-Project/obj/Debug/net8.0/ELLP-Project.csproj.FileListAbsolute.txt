@@ -1,0 +1,8 @@
+C:\Users\raposo\Documents\GitHub\Oficina2\aplicacaoPresencaLLP\ELLP-BackEnd\ELLP-Project\obj\Debug\net8.0\ELLP-Project.csproj.AssemblyReference.cache
+C:\Users\raposo\Documents\GitHub\Oficina2\aplicacaoPresencaLLP\ELLP-BackEnd\ELLP-Project\obj\Debug\net8.0\ELLP-Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\raposo\Documents\GitHub\Oficina2\aplicacaoPresencaLLP\ELLP-BackEnd\ELLP-Project\obj\Debug\net8.0\ELLP-Project.AssemblyInfoInputs.cache
+C:\Users\raposo\Documents\GitHub\Oficina2\aplicacaoPresencaLLP\ELLP-BackEnd\ELLP-Project\obj\Debug\net8.0\ELLP-Project.AssemblyInfo.cs
+C:\Users\raposo\Documents\GitHub\Oficina2\aplicacaoPresencaLLP\ELLP-BackEnd\ELLP-Project\obj\Debug\net8.0\ELLP-Project.csproj.CoreCompileInputs.cache
+C:\Users\raposo\Documents\GitHub\Oficina2\aplicacaoPresencaLLP\ELLP-BackEnd\ELLP-Project\obj\Debug\net8.0\ELLP-Project.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\raposo\Documents\GitHub\Oficina2\aplicacaoPresencaLLP\ELLP-BackEnd\ELLP-Project\obj\Debug\net8.0\ELLP-Project.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\raposo\Documents\GitHub\Oficina2\aplicacaoPresencaLLP\ELLP-BackEnd\ELLP-Project\obj\Debug\net8.0\ELLP-Project.sourcelink.json

@@ -1,10 +1,10 @@
 ﻿using ELLP_Project.Models;
 
-namespace ELLP_Project.Interfaces.InterfacesEntidades
+namespace ELLP_Project.Persistence.Interfaces.InterfacesEntidades
 {
     public interface IFaltaEntidade
     {
-        void FaltaJustificada();
+        void FaltaFoiJustificada();
         void FaltaNaoJustificada();
         void AlterarData(DateOnly data);
         void AlterarJustificativa(string justificativa);

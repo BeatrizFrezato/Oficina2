@@ -1,4 +1,4 @@
-﻿using ELLP_Project.Interfaces.InterfacesEntidades;
+﻿using ELLP_Project.Persistence.Interfaces.InterfacesEntidades;
 
 namespace ELLP_Project.Models
 {
@@ -16,20 +16,22 @@ namespace ELLP_Project.Models
 
         public void AlterarAlunoNome(string nome)
         {
-            AlunoNome = nome;
+            AlterarAlunoNome(nome);
         }
 
-        public void AlterarFalta(int faltaId, DateOnly? novaData = null, string? novaJustificativa = null, bool? justificada = null)
+        public bool AlterarFalta(int faltaId, DateOnly? novaData = null, string? novaJustificativa = null, bool? justificada = null)
         {
             FaltaModel alunoFalta = AlunoFaltas.FirstOrDefault(f => f.FaltaId == faltaId);
             if (alunoFalta == null)
-                throw new Exception("Não existe essa falta no aluno.");
+                return false;
             if (novaData != null)
-                alunoFalta.DataFalta = novaData.Value;
+                alunoFalta.AlterarData(novaData.Value);
             if (justificada != null)
-                alunoFalta.FaltaJustificada = justificada.Value;
+                if (justificada==false) alunoFalta.FaltaNaoJustificada();
+                else alunoFalta.FaltaFoiJustificada();
             if (novaJustificativa != null)
-                alunoFalta.JustificativaFalta = novaJustificativa;
+                alunoFalta.AlterarJustificativa(novaJustificativa);
+            return true;
         }
 
         public List<FaltaModel> FaltasAluno()
@@ -47,9 +49,14 @@ namespace ELLP_Project.Models
             return AlunoOficinas;
         }
 
-        public void removerFalta(int faltaId)
+        public bool RemoverFalta(int faltaId)
         {
+            if(AlunoFaltas.FirstOrDefault(falta => falta.FaltaId == faltaId) == null)
+                return false;
             AlunoFaltas.RemoveAll(falta => falta.FaltaId == faltaId);
+            return true;
         }
+
+
     }
 }

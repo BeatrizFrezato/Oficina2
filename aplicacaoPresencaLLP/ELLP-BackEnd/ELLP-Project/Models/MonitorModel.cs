@@ -1,4 +1,4 @@
-﻿using ELLP_Project.Interfaces.InterfacesEntidades;
+﻿using ELLP_Project.Persistence.Interfaces.InterfacesEntidades;
 
 namespace ELLP_Project.Models
 {
@@ -21,5 +21,19 @@ namespace ELLP_Project.Models
             Nome = nome;
         }
 
+        public void DefinirSenhaHash(string senhaHash)
+        {
+            SenhaHash = senhaHash;
+        }
+
+        public void DefinirSalt(string salt)
+        {
+            Salt = salt;
+        }
+
+        public void DefinirLogin(string login)
+        {
+            Login = login;
+        }
     }
 }

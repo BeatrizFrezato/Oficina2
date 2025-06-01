@@ -1,4 +1,4 @@
-﻿using ELLP_Project.Interfaces.InterfacesEntidades;
+﻿using ELLP_Project.Persistence.Interfaces.InterfacesEntidades;
 
 namespace ELLP_Project.Models
 {
@@ -30,9 +30,9 @@ namespace ELLP_Project.Models
             FaltaJustificada = false;
         }
 
-        void IFaltaEntidade.FaltaJustificada()
+        public void FaltaFoiJustificada()
         {
-            FaltaJustificada |= true;
+            FaltaJustificada = true;
         }
     }
 }

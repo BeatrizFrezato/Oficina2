@@ -1,13 +1,13 @@
 ﻿using ELLP_Project.Models;
 
-namespace ELLP_Project.Interfaces.InterfacesRepositorio
+namespace ELLP_Project.Persistence.Interfaces.InterfacesRepositorio
 {
     public interface IProfessorRepositorio
     {
         IEnumerable<ProfessorModel> GetAllProfessores();
         ProfessorModel? GetProfessorById(int id);
         void AdicionarProfessor(ProfessorModel professor);
-        void DeleteProfessor(int id);
-        void AlterarProfessor(int id, ProfessorModel professor);
+        bool DeleteProfessor(int id);
+        bool AlterarProfessor(int id, ProfessorModel professor);
     }
 }

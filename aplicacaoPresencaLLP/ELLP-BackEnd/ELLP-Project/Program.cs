@@ -1,5 +1,6 @@
 using ELLP_Project.Models;
-
+using ELLP_Project.Services;
+using ELLP_Project.Interfaces.InterfacesServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddSingleton<>();
 builder.Services.AddControllers();
+builder.Services.AddScoped<ILoginServices, LoginServices>();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

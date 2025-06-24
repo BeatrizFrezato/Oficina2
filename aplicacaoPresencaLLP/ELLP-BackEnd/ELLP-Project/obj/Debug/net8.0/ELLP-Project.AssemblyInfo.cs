@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ELLP-Project")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bba7a94b7a914491d648feff6e0206032bffbcf8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e7380aa3917fa363467495f5b1b99f8e8106ef8")]
 [assembly: System.Reflection.AssemblyProductAttribute("ELLP-Project")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ELLP-Project")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

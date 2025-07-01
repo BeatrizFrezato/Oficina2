@@ -8,81 +8,132 @@ namespace ELLP_Project.Controllers
     [Route("api/[controller]")]
     public class OficinaController : ControllerBase
     {
-        private readonly IOficinaRepositorio _oficinaRepositorio;
+        private readonly OficinaServices _oficinaServices;
 
-        public OficinaController(IOficinaRepositorio oficinaRepositorio)
+        public OficinaController(OficinaServices oficinaServices)
         {
-            _oficinaRepositorio = oficinaRepositorio;
+            _oficinaServices = oficinaServices;
         }
 
         [HttpGet]
         public ActionResult<IEnumerable<OficinaModel>> GetAll()
         {
-            var oficinas = _oficinaRepositorio.GetAllOficinas();
-            return Ok(oficinas);
+            try
+            {
+                var oficinas = _oficinaServices.GetOficinas();
+                return Ok(oficinas);
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, "Erro interno: " + ex.Message);
+            }  
         }
 
         [HttpGet("{id}")]
         public ActionResult<OficinaModel> GetById(int id)
         {
-            var oficina = _oficinaRepositorio.GetOficinaById(id);
-            if (oficina == null)
-                return NotFound();
-
-            return Ok(oficina);
+            try
+            {
+                return Ok(_oficinaServices.GetOficinaById(id));
+            }
+            catch(ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Erro interno: " + ex.Message);
+            } 
         }
 
         [HttpPost]
         public IActionResult Create(OficinaModel oficina)
         {
-            _oficinaRepositorio.AdicionarOficina(oficina);
-            return CreatedAtAction(nameof(GetById), new { id = oficina.OficinaId }, oficina);
+            try
+            {
+                _oficinaServices.CadastrarOficina(oficina);
+                return CreatedAtAction(nameof(GetById), new { id = oficina.OficinaId }, oficina);
+            }
+            catch(ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, "Erro interno: " + ex.Message);
+            }
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("AtualizarOficina/{id}")]
         public IActionResult Update(int id, OficinaModel oficina)
         {
-            var existente = _oficinaRepositorio.GetOficinaById(id);
-            if (existente == null)
-                return NotFound();
-
-            _oficinaRepositorio.AtualizarOficina(id, oficina);
-            return NoContent();
+            try
+            {
+                return Ok(_oficinaServices.AtualizarOficina(id,oficina));
+            }
+            catch(ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, "Erro interno: " + ex.Message);
+            }
         }
 
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            var existente = _oficinaRepositorio.GetOficinaById(id);
-            if (existente == null)
-                return NotFound();
-
-            _oficinaRepositorio.DeleteOficina(id);
-            return NoContent();
+            try
+            {
+                _oficinaServices.RemoverOficina(id);
+                return Ok("Oficina excluída.");
+            }
+            catch(ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, "Erro interno: " + ex.Message);
+            }
         }
 
-        [HttpPatch("{id}/nome")]
+        [HttpPut("AlterarNomeOficina/{id}")]
         public IActionResult AlterarNome(int id, [FromBody] string novoNome)
         {
-            var oficina = _oficinaRepositorio.GetOficinaById(id);
-            if (oficina == null)
-                return NotFound();
+            try
+            {
+                var oficina = _oficinaServices.GetOficinaById(id);
+                oficina.AlterarNomeOficina(novoNome);
+                return Ok(_oficinaServices.AtualizarOficina(id, oficina));
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Erro interno: " + ex.Message);
+            }
 
-            oficina.AlterarNomeOficina(novoNome);
-            _oficinaRepositorio.AtualizarOficina(id, oficina);
-            return NoContent();
         }
 
-        [HttpPatch("{id}/professor")]
-        public IActionResult AlterarProfessor(int id, [FromBody] ProfessorModel novoProfessor)
+        [HttpPut("AlterarProfessor/{id}")]
+        public IActionResult AlterarProfessor(int id, int professorId)
         {
-            var oficina = _oficinaRepositorio.GetOficinaById(id);
-            if (oficina == null)
-                return NotFound();
-
-            oficina.AlterarProfessorOficina(novoProfessor);
-            _oficinaRepositorio.AtualizarOficina(id, oficina);
-            return NoContent();
+            try
+            {
+                return Ok(_oficinaServices.AlterarProfessor(id, professorId));
+            }
+            catch(ArgumentException ex) 
+            {
+                return BadRequest(ex.Message);
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, "Erro interno: " + ex.Message);
+            }
         }
 
         [HttpDelete("{id}/aluno/{alunoId}")]

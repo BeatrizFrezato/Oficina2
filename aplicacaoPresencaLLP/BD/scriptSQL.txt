@@ -1,0 +1,54 @@
+-- Aluno
+CREATE TABLE Aluno (
+    Id SERIAL PRIMARY KEY,
+    Nome VARCHAR(100) NOT NULL,
+    Email VARCHAR(100) UNIQUE NOT NULL
+);
+
+-- Oficina
+CREATE TABLE Oficina (
+    Id SERIAL PRIMARY KEY,
+    Titulo VARCHAR(100) NOT NULL,
+    Data TIMESTAMP NOT NULL
+);
+
+-- Monitor (ou Professor)
+CREATE TABLE Monitor (
+    Id SERIAL PRIMARY KEY,
+    Nome VARCHAR(100) NOT NULL,
+    Email VARCHAR(100) UNIQUE NOT NULL
+);
+
+-- Presença
+CREATE TABLE Presenca (
+    Id SERIAL PRIMARY KEY,
+    AlunoId INT NOT NULL,
+    OficinaId INT NOT NULL,
+    Presente BOOLEAN NOT NULL DEFAULT false,
+    DataRegistro TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (AlunoId) REFERENCES Aluno(Id) ON DELETE CASCADE,
+    FOREIGN KEY (OficinaId) REFERENCES Oficina(Id) ON DELETE CASCADE
+);
+
+-- Usuário (para login)
+CREATE TABLE Usuario (
+    Id SERIAL PRIMARY KEY,
+    Login VARCHAR(50) UNIQUE NOT NULL,
+    SenhaHash VARCHAR(255) NOT NULL,
+    Perfil VARCHAR(50) NOT NULL -- Ex: 'admin', 'monitor', 'aluno'
+);
+
+--Relatório de presença por aluno
+SELECT a.Nome AS Aluno, o.Titulo AS Oficina, p.Presente, p.DataRegistro
+FROM Presenca p
+JOIN Aluno a ON a.Id = p.AlunoId
+JOIN Oficina o ON o.Id = p.OficinaId
+ORDER BY a.Nome, o.Data;
+
+--Frequência de cada aluno
+SELECT a.Nome, COUNT(*) AS TotalPresencas,
+       SUM(CASE WHEN p.Presente THEN 1 ELSE 0 END) AS PresencasConfirmadas
+FROM Presenca p
+JOIN Aluno a ON a.Id = p.AlunoId
+GROUP BY a.Nome
+ORDER BY a.Nome;

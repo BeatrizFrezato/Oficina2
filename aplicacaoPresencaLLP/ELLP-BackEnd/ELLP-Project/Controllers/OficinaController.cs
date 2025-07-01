@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using ELLP_Project.Models;
-using ELLP_Project.Interfaces.InterfacesRepositorio;
+using ELLP_Project.Services;
 
 namespace ELLP_Project.Controllers
 {

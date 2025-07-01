@@ -1,5 +1,5 @@
 ﻿using ELLP_Project.Models;
-using ELLP_Project.Interfaces.InterfacesRepositorio;
+using ELLP_Project.Services;
 using ELLP_Project.Interfaces.InterfacesServices;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,7 +9,7 @@ namespace ELLP_Project.Controllers
     [Route("api/[controller]")]
     public class LoginController : ControllerBase
     {
-        private readonly ILoginServices _loginServices;
+        private readonly LoginServices _loginServices;
 
         public LoginController(ILoginServices loginServices)
         {

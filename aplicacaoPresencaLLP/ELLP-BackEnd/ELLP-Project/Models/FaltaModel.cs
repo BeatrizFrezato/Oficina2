@@ -4,7 +4,8 @@ namespace ELLP_Project.Models
 {
     public class FaltaModel : IFaltaEntidade
     {
-        public required AlunoModel Aluno { get; set; }
+        public AlunoModel Aluno { get; set; }
+        public int AlunoId { get; set; }
         public int FaltaId { get; set; }
         public DateOnly DataFalta { get; set; }
         public string? JustificativaFalta { get; set; }
@@ -13,6 +14,7 @@ namespace ELLP_Project.Models
         public void AlterarAluno(AlunoModel aluno)
         {
             Aluno = aluno;
+            AlunoId = aluno.AlunoId;
         }
 
         public void AlterarData(DateOnly data)

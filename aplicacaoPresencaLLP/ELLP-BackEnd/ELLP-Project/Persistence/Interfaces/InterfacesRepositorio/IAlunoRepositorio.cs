@@ -6,8 +6,8 @@ namespace ELLP_Project.Persistence.Interfaces.InterfacesRepositorio
     {
         IEnumerable<AlunoModel> GetAllAlunos();
         AlunoModel? GetAlunoById(int id);
-        void AdicionarAluno(AlunoModel aluno);
-        bool AtualizarAluno(int alunoId, AlunoModel aluno);
+        AlunoModel AdicionarAluno(AlunoModel aluno);
+        AlunoModel AtualizarAluno(int alunoId, AlunoModel aluno);
         bool DeleteAluno(int id);
     }
 }

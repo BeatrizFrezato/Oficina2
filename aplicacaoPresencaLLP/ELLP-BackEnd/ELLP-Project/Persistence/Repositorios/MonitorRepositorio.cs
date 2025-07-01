@@ -8,33 +8,26 @@ namespace ELLP_Project.Persistence.Repositorios
     {
         private readonly List<MonitorModel> _monitores = new List<MonitorModel>();
 
-        public void AdicionarMonitor(MonitorModel monitor)
+        public MonitorModel AdicionarMonitor(MonitorModel monitor)
         {
             _monitores.Add(monitor);
+            return monitor;
         }
 
-        public bool AlterarMonitor(int monitorId, MonitorModel monitor)
+        public MonitorModel AlterarMonitor(int monitorId, MonitorModel monitor)
         {
             MonitorModel getMonitor = _monitores.FirstOrDefault(monitor => monitor.Id == monitorId);
             if (getMonitor == null)
-                return false;
-
+                return null;
             getMonitor.AlterarNome(monitor.Nome);
-            getMonitor.AdicionarOficina(monitor.Oficina);
-            if (monitor.Salt != null && getMonitor.Salt != monitor.Salt)
-            {
-                getMonitor.DefinirSalt(monitor.Salt);
-            }
-            if (monitor.SenhaHash != null && getMonitor.SenhaHash != monitor.SenhaHash)
-            {
-                getMonitor.DefinirSenhaHash(monitor.SenhaHash);
-            }
-            if (getMonitor.Login != monitor.Login)
-            {
-                getMonitor.DefinirLogin(monitor.Login);
-            }
 
-            return true;
+            getMonitor.AdicionarOficina(monitor.Oficina);
+
+            getMonitor.DefinirSalt(monitor.Salt);
+            getMonitor.DefinirSenhaHash(monitor.SenhaHash);
+            getMonitor.DefinirLogin(monitor.Login);
+
+            return getMonitor;
         }
 
         public bool DeleteMonitor(int monitorId)

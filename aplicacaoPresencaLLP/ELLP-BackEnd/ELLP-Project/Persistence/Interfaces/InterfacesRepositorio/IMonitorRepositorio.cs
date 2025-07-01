@@ -6,8 +6,8 @@ namespace ELLP_Project.Persistence.Interfaces.InterfacesRepositorio
     {
         IEnumerable<MonitorModel> GetAllMonitor();
         MonitorModel? GetMonitorById(int id);
-        void AdicionarMonitor(MonitorModel monitor);
-        bool AlterarMonitor(int monitorId, MonitorModel monitor);
+        MonitorModel AdicionarMonitor(MonitorModel monitor);
+        MonitorModel AlterarMonitor(int monitorId, MonitorModel monitor);
         bool DeleteMonitor(int monitorId);
     }
 }

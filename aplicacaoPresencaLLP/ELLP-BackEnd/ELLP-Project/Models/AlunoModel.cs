@@ -6,8 +6,9 @@ namespace ELLP_Project.Models
     {
         public int AlunoId { get; set; }
         public string AlunoNome { get; set; }
-        public List<FaltaModel> AlunoFaltas { get; set; }
-        public List<OficinaModel> AlunoOficinas { get; set; }
+        public List<FaltaModel> AlunoFaltas { get; set; } = new();
+        public OficinaModel AlunoOficinas { get; set; } = new();
+        public int OficinaId { get; set; }
 
         public void AdicionarFalta(FaltaModel falta)
         {
@@ -16,22 +17,7 @@ namespace ELLP_Project.Models
 
         public void AlterarAlunoNome(string nome)
         {
-            AlterarAlunoNome(nome);
-        }
-
-        public bool AlterarFalta(int faltaId, DateOnly? novaData = null, string? novaJustificativa = null, bool? justificada = null)
-        {
-            FaltaModel alunoFalta = AlunoFaltas.FirstOrDefault(f => f.FaltaId == faltaId);
-            if (alunoFalta == null)
-                return false;
-            if (novaData != null)
-                alunoFalta.AlterarData(novaData.Value);
-            if (justificada != null)
-                if (justificada==false) alunoFalta.FaltaNaoJustificada();
-                else alunoFalta.FaltaFoiJustificada();
-            if (novaJustificativa != null)
-                alunoFalta.AlterarJustificativa(novaJustificativa);
-            return true;
+            AlunoNome=nome;
         }
 
         public List<FaltaModel> FaltasAluno()
@@ -44,9 +30,11 @@ namespace ELLP_Project.Models
             return AlunoFaltas.Count;
         }
 
-        public List<OficinaModel> OficinasAluno()
+        public OficinaModel OficinaAluno(OficinaModel oficina)
         {
-            return AlunoOficinas;
+            AlunoOficinas = oficina;
+            OficinaId = oficina.OficinaId;
+            return oficina;
         }
 
         public bool RemoverFalta(int faltaId)

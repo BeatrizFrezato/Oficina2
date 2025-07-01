@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using ELLP_Project.Models;
-using ELLP_Project.Interfaces.InterfacesRepositório;
+using ELLP_Project.Services;
  
 namespace ELLP_Project.Controllers
 {
@@ -8,24 +8,24 @@ namespace ELLP_Project.Controllers
     [Route("api/[controller]")]
     public class AlunoController : ControllerBase
     {
-        private readonly IAlunoRepositorio _alunoRepositorio;
+        private readonly AlunoServices _alunoServices;
 
-        public AlunoController(IAlunoRepositorio alunoRepositorio)
+        public AlunoController(AlunoServices alunoServices)
         {
-            _alunoRepositorio = alunoRepositorio;
+            _alunoServices = alunoServices;
         }
 
         [HttpGet]
         public ActionResult<IEnumerable<AlunoModel>> GetTodos()
         {
-            var alunos = _alunoRepositorio.GetAllAlunos();
+            var alunos = _alunoServices.GetAlunos();
             return Ok(alunos);
         }
 
         [HttpGet("{id}")]
-        public ActionResult<AlunoModel> GetPorId(int id)
+        public ActionResult<AlunoModel> GetPorId(int alunoId)
         {
-            var aluno = _alunoRepositorio.GetAlunoById(id);
+            var aluno = _alunoServices.GetAlunoById(alunoId);
             if (aluno == null)
                 return NotFound("Aluno não encontrado.");
 
@@ -33,107 +33,54 @@ namespace ELLP_Project.Controllers
         }
 
         [HttpPost]
-        public ActionResult Criar([FromBody] AlunoModel novoAluno)
+        public ActionResult CreateAluno([FromBody] AlunoModel novoAluno)
         {
-            _alunoRepositorio.AdicionarAluno(novoAluno);
+            _alunoServices.CadastrarAluno(novoAluno);
             return CreatedAtAction(nameof(GetPorId), new { id = novoAluno.AlunoId }, novoAluno);
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("atualizarAluno/{id}")]
         public ActionResult Atualizar(int id, [FromBody] AlunoModel alunoAtualizado)
         {
-            var alunoExistente = _alunoRepositorio.GetAlunoById(id);
-            if (alunoExistente == null)
+      
+            if (_alunoServices.GetAlunoById(id) == null)
                 return NotFound("Aluno não encontrado.");
 
-            _alunoRepositorio.AtualizarAluno(id, alunoAtualizado);
+            _alunoServices.AtualizarAluno(id, alunoAtualizado);
             return Ok("Aluno atualizado.");
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("excluirAluno/{id}")]
         public ActionResult Deletar(int id)
         {
-            var alunoExistente = _alunoRepositorio.GetAlunoById(id);
+            var alunoExistente = _alunoServices.GetAlunoById(id);
             if (alunoExistente == null)
                 return NotFound("Aluno não encontrado.");
 
-            _alunoRepositorio.DeleteAluno(id);
+            _alunoServices.RemoverAluno(id);
             return Ok("Aluno removido.");
-        }
-
-        [HttpPost("{id}/faltas")]
-        public ActionResult AdicionarFalta(int id, [FromBody] FaltaModel falta)
-        {
-            var aluno = _alunoRepositorio.GetAlunoById(id);
-            if (aluno == null)
-                return NotFound("Aluno não encontrado.");
-
-            aluno.AdicionarFalta(falta);
-            _alunoRepositorio.AtualizarAluno(id, aluno);
-            return Ok("Falta adicionada.");
-        }
-
-        [HttpPut("{id}/faltas/{faltaId}")]
-        public ActionResult AlterarFalta(int id, int faltaId, [FromBody] FaltaModel faltaAtualizada)
-        {
-            var aluno = _alunoRepositorio.GetAlunoById(id);
-            if (aluno == null)
-                return NotFound("Aluno não encontrado.");
-
-            try
-            {
-                aluno.AlterarFalta(faltaId, faltaAtualizada.DataFalta, faltaAtualizada.JustificativaFalta, faltaAtualizada.FaltaJustificada);
-                _alunoRepositorio.AtualizarAluno(id, aluno);
-                return Ok("Falta atualizada.");
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
-
-        [HttpDelete("{id}/faltas/{faltaId}")]
-        public ActionResult RemoverFalta(int id, int faltaId)
-        {
-            var aluno = _alunoRepositorio.GetAlunoById(id);
-            if (aluno == null)
-                return NotFound("Aluno não encontrado.");
-
-            aluno.removerFalta(faltaId);
-            _alunoRepositorio.AtualizarAluno(id, aluno);
-            return Ok("Falta removida.");
-        }
-
-        [HttpGet("{id}/faltas")]
-        public ActionResult<List<FaltaModel>> ListarFaltas(int id)
-        {
-            var aluno = _alunoRepositorio.GetAlunoById(id);
-            if (aluno == null)
-                return NotFound("Aluno não encontrado.");
-
-            return Ok(aluno.FaltasAluno());
         }
 
         [HttpPut("{id}/nome")]
         public ActionResult AlterarNome(int id, [FromBody] string novoNome)
         {
-            var aluno = _alunoRepositorio.GetAlunoById(id);
+            var aluno = _alunoServices.GetAlunoById(id);
             if (aluno == null)
                 return NotFound("Aluno não encontrado.");
 
-            aluno.AlterarAlunoNome(novoNome);
-            _alunoRepositorio.AtualizarAluno(id, aluno);
+            aluno.AlunoNome = novoNome;
+            _alunoServices.AtualizarAluno(id, aluno);
             return Ok("Nome alterado.");
         }
 
-        [HttpGet("{id}/oficinas")]
-        public ActionResult<List<OficinaModel>> ListarOficinas(int id)
+        [HttpGet("{id}/oficina")]
+        public ActionResult <OficinaModel> ListarOficinas(int id)
         {
-            var aluno = _alunoRepositorio.GetAlunoById(id);
+            var aluno = _alunoServices.GetAlunoById(id);
             if (aluno == null)
                 return NotFound("Aluno não encontrado.");
 
-            return Ok(aluno.OficinasAluno());
+            return Ok(aluno.AlunoOficinas);
         }
     }
 }

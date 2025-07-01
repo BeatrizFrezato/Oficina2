@@ -6,8 +6,8 @@ namespace ELLP_Project.Persistence.Interfaces.InterfacesRepositorio
     {
         IEnumerable<OficinaModel> GetAllOficinas();
         OficinaModel? GetOficinaById(int oficinaId);
-        void AdicionarOficina(OficinaModel oficina);
+        OficinaModel AdicionarOficina(OficinaModel oficina);
         bool DeleteOficina(int oficinaId);
-        bool AtualizarOficina(int oficinaId, OficinaModel oficina);
+        OficinaModel AtualizarOficina(int oficinaId, OficinaModel oficina);
     }
 }

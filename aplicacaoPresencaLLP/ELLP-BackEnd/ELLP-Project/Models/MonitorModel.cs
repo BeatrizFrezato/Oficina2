@@ -6,7 +6,8 @@ namespace ELLP_Project.Models
     {
         public int Id { get; set; }
         public string Nome { get; set; }
-        public OficinaModel Oficina { get; set; }
+        public OficinaModel? Oficina { get; set; }
+        public int? OficinaId { get; set; }
         public string Salt { get; set; }
         public string SenhaHash { get; set; }
         public string Login { get; set; }
@@ -14,6 +15,7 @@ namespace ELLP_Project.Models
         public void AdicionarOficina(OficinaModel oficina)
         {
             Oficina = oficina;
+            OficinaId = oficina.OficinaId;
         }
 
         public void AlterarNome(string nome)

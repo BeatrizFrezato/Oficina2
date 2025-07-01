@@ -4,10 +4,11 @@ namespace ELLP_Project.Persistence.Interfaces.InterfacesRepositorio
 {
     public interface IFaltaRepositorio
     {
-        void AdicionarFalta(FaltaModel falta);
+        FaltaModel AdicionarFalta(FaltaModel falta);
         bool RemoverFalta(int id);
-        bool AtualizarFalta(int faltaId, FaltaModel falta);
+        FaltaModel AtualizarFalta(int faltaId, FaltaModel falta);
         IEnumerable<FaltaModel> GetAllFaltas();
         FaltaModel? GetFaltaById(int id);
+        List<FaltaModel> GetFaltaByAluno(int alunoId);
     }
 }

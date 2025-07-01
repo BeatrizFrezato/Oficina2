@@ -10,27 +10,25 @@ public class AlunoRepositorio : IAlunoRepositorio
 
     private readonly List<AlunoModel> _alunos = new List<AlunoModel>();
 
-    public void AdicionarAluno(AlunoModel aluno)
+    public AlunoModel AdicionarAluno(AlunoModel aluno)
     {
         _alunos.Add(aluno);
+        return aluno;
     }
 
-    public bool AtualizarAluno(int alunoId, AlunoModel aluno)
+    public AlunoModel AtualizarAluno(int alunoId, AlunoModel aluno)
     {
         AlunoModel getAluno = _alunos.FirstOrDefault(aluno => aluno.AlunoId == alunoId);
         if (getAluno == null)
-            return false;
+            return null;
         getAluno.AlterarAlunoNome(aluno.AlunoNome);
-        if (aluno.AlunoFaltas != null)
+        if (aluno.AlunoFaltas.Count!=0)
         {
             getAluno.AlunoFaltas = aluno.AlunoFaltas.ToList(); 
         }
-
-        if (aluno.AlunoOficinas != null)
-        {
-            getAluno.AlunoOficinas = aluno.AlunoOficinas.ToList(); 
-        }
-        return true;
+        aluno.OficinaAluno(aluno.AlunoOficinas);
+        
+        return getAluno;
     }
 
     public bool DeleteAluno(int id)
@@ -50,4 +48,5 @@ public class AlunoRepositorio : IAlunoRepositorio
     {
         return _alunos.FirstOrDefault(aluno => aluno.AlunoId == alunoId);
     }
+
 }

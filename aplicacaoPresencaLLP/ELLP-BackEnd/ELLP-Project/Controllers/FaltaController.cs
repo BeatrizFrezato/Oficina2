@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using ELLP_Project.Models;
-using ELLP_Project.Interfaces.InterfacesRepositorio;
+using ELLP_Project.Services;
 
 namespace ELLP_Project.Controllers
 {
@@ -8,28 +8,32 @@ namespace ELLP_Project.Controllers
     [Route("api/[controller]")]
     public class FaltaController : ControllerBase
     {
-        private readonly IFaltaRepositorio _faltaRepositorio;
+        private readonly FaltaServices _faltaServices;
 
-        public FaltaController(IFaltaRepositorio faltaRepositorio)
+        public FaltaController(FaltaServices faltaServices)
         {
-            _faltaRepositorio = faltaRepositorio;
+            _faltaServices = faltaServices;
         }
 
         [HttpGet]
         public ActionResult<IEnumerable<FaltaModel>> GetAll()
         {
-            var faltas = _faltaRepositorio.GetAllFaltas();
+            var faltas = _faltaServices.GetFaltas();
             return Ok(faltas);
         }
 
         [HttpGet("{id}")]
         public ActionResult<FaltaModel> GetById(int id)
         {
-            var falta = _faltaRepositorio.GetFaltaById(id);
-            if (falta == null)
-                return NotFound();
-
-            return Ok(falta);
+            try
+            {
+                return Ok(_faltaServices.GetFaltaById(id));
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            
         }
 
         [HttpPost]

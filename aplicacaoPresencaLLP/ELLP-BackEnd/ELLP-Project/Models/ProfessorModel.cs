@@ -6,7 +6,7 @@ namespace ELLP_Project.Models
     {
         public int Id { get; set; }
         public string Nome { get; set; }
-        public List<OficinaModel> Oficinas { get; set; }
+        public List<OficinaModel> Oficinas { get; set; } = new();
         public string Salt { get; set; }
         public string SenhaHash { get; set; }
         public string Login { get; set; }

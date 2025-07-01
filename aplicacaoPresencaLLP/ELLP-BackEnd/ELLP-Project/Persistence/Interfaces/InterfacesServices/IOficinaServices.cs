@@ -4,10 +4,11 @@ namespace ELLP_Project.Persistence.Interfaces.InterfacesServices
 {
     public interface IOficinaServices
     {
-        void CadastrarOficina(OficinaModel oficina);
-        bool AtualizarOficina(OficinaModel oficina);
+        OficinaModel CadastrarOficina(OficinaModel oficina);
+        OficinaModel AtualizarOficina(int OficinaId, OficinaModel oficina);
         bool RemoverOficina(int oficinaId);
         IEnumerable<OficinaModel> GetOficinas();
         OficinaModel? GetOficinaById(int oficinaId);
+        bool RemoverAlunoMatriculado(int oficinaId, int alunoId);
     }
 }

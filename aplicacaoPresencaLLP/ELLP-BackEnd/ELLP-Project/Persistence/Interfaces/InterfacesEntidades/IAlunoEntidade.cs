@@ -8,8 +8,7 @@ namespace ELLP_Project.Persistence.Interfaces.InterfacesEntidades
         List<FaltaModel> FaltasAluno();
         void AdicionarFalta(FaltaModel falta);
         bool RemoverFalta(int faltaId);
-        bool AlterarFalta(int faltaId, DateOnly? novaData = null, string? novaJustificativa = null, bool? justificada = null);
-        List<OficinaModel> OficinasAluno();
+        OficinaModel OficinaAluno(OficinaModel oficina);
         void AlterarAlunoNome(string nome);
     }
 }

@@ -44,7 +44,10 @@ namespace ELLP_Project.Services
 
         public AlunoModel? GetAlunoById(int alunoId)
         {
-            return _alunoRepositorio.GetAlunoById(alunoId);
+            AlunoModel aluno = _alunoRepositorio.GetAlunoById(alunoId);
+            if (aluno == null)
+                throw new ArgumentException("Não existe aluno com esse ID.");
+            return aluno;
         }
 
         public IEnumerable<AlunoModel> GetAlunos()
@@ -54,6 +57,9 @@ namespace ELLP_Project.Services
 
         public bool RemoverAluno(int alunoId)
         {
+            if (_alunoRepositorio.GetAlunoById(alunoId) == null)
+                throw new ArgumentException("Não existe aluno com esse ID");
+
             return _alunoRepositorio.DeleteAluno(alunoId);
         }
     }

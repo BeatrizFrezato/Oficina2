@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\controllers\\faltacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\oficina2\\aplicacaopresencallp\\ellp-backend\\ellp-project\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\oficina2\\aplicacaopresencallp\\ellp-backend\\ellp-project\\services\\alunoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\services\\alunoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\oficina2\\aplicacaopresencallp\\ellp-backend\\ellp-project\\services\\faltaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\services\\faltaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,14 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\oficina2\\aplicacaopresencallp\\ellp-backend\\ellp-project\\persistence\\repositorios\\faltarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\persistence\\repositorios\\faltarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\oficina2\\aplicacaopresencallp\\ellp-backend\\ellp-project\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\oficina2\\aplicacaopresencallp\\ellp-backend\\ellp-project\\services\\alunoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\services\\alunoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\oficina2\\aplicacaopresencallp\\ellp-backend\\ellp-project\\persistence\\interfaces\\interfacesservices\\ialunoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -180,20 +180,20 @@
               "RelativeDocumentMoniker": "ELLP-Project\\Controllers\\FaltaController.cs",
               "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Controllers\\FaltaController.cs",
               "RelativeToolTip": "ELLP-Project\\Controllers\\FaltaController.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAgwCUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-01T20:53:25.203Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "AlunoController.cs",
               "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Controllers\\AlunoController.cs",
               "RelativeDocumentMoniker": "ELLP-Project\\Controllers\\AlunoController.cs",
               "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Controllers\\AlunoController.cs",
               "RelativeToolTip": "ELLP-Project\\Controllers\\AlunoController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAADwv4YAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-31T20:42:03.287Z",
               "EditorCaption": ""
@@ -208,8 +208,7 @@
               "RelativeToolTip": "ELLP-Project\\Persistence\\Repositorios\\AlunoRepositorio.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T18:11:43.8Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T18:11:43.8Z"
             },
             {
               "$type": "Document",
@@ -221,12 +220,11 @@
               "RelativeToolTip": "ELLP-Project\\Persistence\\Interfaces\\InterfacesRepositorio\\IAlunoRepositorio.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T22:29:32.287Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-31T22:29:32.287Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "FaltaRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Persistence\\Repositorios\\FaltaRepositorio.cs",
               "RelativeDocumentMoniker": "ELLP-Project\\Persistence\\Repositorios\\FaltaRepositorio.cs",
@@ -234,8 +232,7 @@
               "RelativeToolTip": "ELLP-Project\\Persistence\\Repositorios\\FaltaRepositorio.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAAACgAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T19:53:04.005Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T19:53:04.005Z"
             },
             {
               "$type": "Document",
@@ -247,8 +244,7 @@
               "RelativeToolTip": "ELLP-Project\\Persistence\\Interfaces\\InterfacesRepositorio\\IFaltaRepositorio.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T23:08:26.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-31T23:08:26.078Z"
             },
             {
               "$type": "Document",
@@ -260,12 +256,11 @@
               "RelativeToolTip": "ELLP-Project\\Persistence\\Interfaces\\InterfacesServices\\IAlunoServices.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T17:33:51.796Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T17:33:51.796Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "IFaltaServices.cs",
               "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Persistence\\Interfaces\\InterfacesServices\\IFaltaServices.cs",
               "RelativeDocumentMoniker": "ELLP-Project\\Persistence\\Interfaces\\InterfacesServices\\IFaltaServices.cs",
@@ -273,12 +268,11 @@
               "RelativeToolTip": "ELLP-Project\\Persistence\\Interfaces\\InterfacesServices\\IFaltaServices.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T17:47:30.8Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T17:47:30.8Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "FaltaServices.cs",
               "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Services\\FaltaServices.cs",
               "RelativeDocumentMoniker": "ELLP-Project\\Services\\FaltaServices.cs",
@@ -286,18 +280,17 @@
               "RelativeToolTip": "ELLP-Project\\Services\\FaltaServices.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAewCkAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T18:32:38.404Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-01T18:32:38.404Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "AlunoServices.cs",
               "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Services\\AlunoServices.cs",
               "RelativeDocumentMoniker": "ELLP-Project\\Services\\AlunoServices.cs",
               "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Services\\AlunoServices.cs",
               "RelativeToolTip": "ELLP-Project\\Services\\AlunoServices.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAUwBMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAewDUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-01T17:06:32.33Z",
               "EditorCaption": ""
@@ -312,8 +305,7 @@
               "RelativeToolTip": "ELLP-Project\\Persistence\\Repositorios\\OficinaRepositorio.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T17:39:40.611Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-01T17:39:40.611Z"
             },
             {
               "$type": "Document",
@@ -325,8 +317,7 @@
               "RelativeToolTip": "ELLP-Project\\Models\\AlunoModel.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAswBQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T20:06:26.29Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-31T20:06:26.29Z"
             },
             {
               "$type": "Document",
@@ -338,8 +329,7 @@
               "RelativeToolTip": "ELLP-Project\\Models\\FaltaModel.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAgwAsAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T20:25:52.582Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-31T20:25:52.582Z"
             },
             {
               "$type": "Document",
@@ -351,8 +341,7 @@
               "RelativeToolTip": "ELLP-Project\\Models\\OficinaModel.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T20:09:09.537Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-31T20:09:09.537Z"
             },
             {
               "$type": "Document",
@@ -364,8 +353,7 @@
               "RelativeToolTip": "ELLP-Project\\Models\\LoginModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T16:06:29.727Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-01T16:06:29.727Z"
             },
             {
               "$type": "Document",
@@ -377,8 +365,7 @@
               "RelativeToolTip": "ELLP-Project\\Services\\MonitorServices.cs",
               "ViewState": "AgIAAF0AAAAAAAAAAAAgwH4AAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T18:52:44.416Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-01T18:52:44.416Z"
             },
             {
               "$type": "Document",
@@ -390,8 +377,7 @@
               "RelativeToolTip": "ELLP-Project\\Services\\ProfessorServices.cs",
               "ViewState": "AgIAAFgAAAAAAAAAAAAAABwAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T20:07:04.7Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-01T20:07:04.7Z"
             },
             {
               "$type": "Document",
@@ -403,8 +389,7 @@
               "RelativeToolTip": "ELLP-Project\\Persistence\\Interfaces\\InterfacesServices\\IProfessorServices.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T17:45:35.91Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T17:45:35.91Z"
             },
             {
               "$type": "Document",
@@ -416,8 +401,7 @@
               "RelativeToolTip": "ELLP-Project\\Persistence\\Interfaces\\InterfacesEntidades\\IAlunoEntidade.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T21:24:15.397Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-31T21:24:15.397Z"
             },
             {
               "$type": "Document",
@@ -429,8 +413,7 @@
               "RelativeToolTip": "ELLP-Project\\Persistence\\Interfaces\\InterfacesEntidades\\IFaltaEntidade.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T22:06:42.244Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-31T22:06:42.244Z"
             },
             {
               "$type": "Document",
@@ -442,8 +425,7 @@
               "RelativeToolTip": "ELLP-Project\\Services\\OficinaServices.cs",
               "ViewState": "AgIAAC4AAAAAAAAAAAAAAEwAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T19:58:16.818Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-01T19:58:16.818Z"
             },
             {
               "$type": "Document",
@@ -455,8 +437,7 @@
               "RelativeToolTip": "ELLP-Project\\Persistence\\Interfaces\\InterfacesServices\\IOficinaServices.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T17:43:53.362Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T17:43:53.362Z"
             },
             {
               "$type": "Document",
@@ -468,8 +449,7 @@
               "RelativeToolTip": "ELLP-Project\\Models\\MonitorModel.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAqwAgAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T20:09:21.485Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-31T20:09:21.485Z"
             },
             {
               "$type": "Document",
@@ -481,8 +461,7 @@
               "RelativeToolTip": "ELLP-Project\\Persistence\\Interfaces\\InterfacesServices\\IMonitorServices.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T17:36:25.944Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T17:36:25.944Z"
             },
             {
               "$type": "Document",
@@ -494,8 +473,7 @@
               "RelativeToolTip": "ELLP-Project\\Persistence\\Repositorios\\ProfessorRepositorio.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAiwBQAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T18:06:40.187Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-01T18:06:40.187Z"
             },
             {
               "$type": "Document",
@@ -507,8 +485,7 @@
               "RelativeToolTip": "ELLP-Project\\Models\\ProfessorModel.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAQwAYAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T20:09:33.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-31T20:09:33.114Z"
             },
             {
               "$type": "Document",
@@ -520,8 +497,7 @@
               "RelativeToolTip": "ELLP-Project\\Persistence\\Repositorios\\MonitorRepositorio.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T18:24:07.727Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T18:24:07.727Z"
             },
             {
               "$type": "Document",
@@ -533,8 +509,7 @@
               "RelativeToolTip": "ELLP-Project\\Persistence\\Interfaces\\InterfacesRepositorio\\IOficinaRepositorio.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T00:06:39.526Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T00:06:39.526Z"
             },
             {
               "$type": "Document",
@@ -546,8 +521,7 @@
               "RelativeToolTip": "ELLP-Project\\Utils\\PasswordUtils.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T19:26:35.806Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-01T19:26:35.806Z"
             },
             {
               "$type": "Document",
@@ -559,8 +533,7 @@
               "RelativeToolTip": "ELLP-Project\\ELLP-Project.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-07-01T19:36:31.445Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-01T19:36:31.445Z"
             },
             {
               "$type": "Document",
@@ -572,8 +545,7 @@
               "RelativeToolTip": "ELLP-Project\\Services\\LoginServices.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T18:32:14.971Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-01T18:32:14.971Z"
             },
             {
               "$type": "Document",
@@ -585,8 +557,7 @@
               "RelativeToolTip": "ELLP-Project\\Persistence\\Interfaces\\InterfacesServices\\ILoginServices.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T18:33:46.684Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-01T18:33:46.684Z"
             },
             {
               "$type": "Document",
@@ -598,8 +569,7 @@
               "RelativeToolTip": "ELLP-Project\\Persistence\\Interfaces\\InterfacesEntidades\\IMonitorEntidade.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T23:35:43.885Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-31T23:35:43.885Z"
             },
             {
               "$type": "Document",
@@ -611,8 +581,7 @@
               "RelativeToolTip": "ELLP-Project\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T20:47:16.146Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-31T20:47:16.146Z"
             },
             {
               "$type": "Document",
@@ -624,8 +593,7 @@
               "RelativeToolTip": "ELLP-Project\\ELLP-Project.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-31T20:05:53.482Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-31T20:05:53.482Z"
             },
             {
               "$type": "Document",
@@ -637,8 +605,7 @@
               "RelativeToolTip": "ELLP-Project\\Persistence\\Interfaces\\InterfacesEntidades\\IProfessorEntidade.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T00:08:53.623Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T00:08:53.623Z"
             },
             {
               "$type": "Document",
@@ -650,8 +617,7 @@
               "RelativeToolTip": "ELLP-Project\\Persistence\\Interfaces\\InterfacesEntidades\\IOficinaEntidade.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T23:59:26.286Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-31T23:59:26.286Z"
             },
             {
               "$type": "Document",
@@ -663,8 +629,7 @@
               "RelativeToolTip": "ELLP-Project\\Persistence\\Interfaces\\InterfacesRepositorio\\IMonitorRepositorio.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T23:57:41.063Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-31T23:57:41.063Z"
             },
             {
               "$type": "Document",
@@ -676,8 +641,7 @@
               "RelativeToolTip": "ELLP-Project\\Persistence\\Interfaces\\InterfacesRepositorio\\IProfessorRepositorio.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T16:35:03.821Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T16:35:03.821Z"
             },
             {
               "$type": "Document",

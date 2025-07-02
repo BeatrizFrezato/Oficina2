@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\oficina2\\aplicacaopresencallp\\ellp-backend\\ellp-project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\oficina2\\aplicacaopresencallp\\ellp-backend\\ellp-project\\models\\monitormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\models\\monitormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\oficina2\\aplicacaopresencallp\\ellp-backend\\ellp-project\\services\\loginservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\services\\loginservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\oficina2\\aplicacaopresencallp\\ellp-backend\\ellp-project\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,20 +27,12 @@
       "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\models\\faltamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\oficina2\\aplicacaopresencallp\\ellp-backend\\ellp-project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\oficina2\\aplicacaopresencallp\\ellp-backend\\ellp-project\\controllers\\faltacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\controllers\\faltacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\oficina2\\aplicacaopresencallp\\ellp-backend\\ellp-project\\controllers\\oficinacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\controllers\\oficinacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\oficina2\\aplicacaopresencallp\\ellp-backend\\ellp-project\\services\\loginservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\services\\loginservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\oficina2\\aplicacaopresencallp\\ellp-backend\\ellp-project\\persistence\\interfaces\\interfacesservices\\iloginservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -61,10 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\oficina2\\aplicacaopresencallp\\ellp-backend\\ellp-project\\services\\oficinaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\services\\oficinaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\oficina2\\aplicacaopresencallp\\ellp-backend\\ellp-project\\models\\monitormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\models\\monitormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\oficina2\\aplicacaopresencallp\\ellp-backend\\ellp-project\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -186,33 +186,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginModel.cs",
-              "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Models\\LoginModel.cs",
-              "RelativeDocumentMoniker": "ELLP-Project\\Models\\LoginModel.cs",
-              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Models\\LoginModel.cs",
-              "RelativeToolTip": "ELLP-Project\\Models\\LoginModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T00:16:06.019Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "OficinaController.cs",
-              "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Controllers\\OficinaController.cs",
-              "RelativeDocumentMoniker": "ELLP-Project\\Controllers\\OficinaController.cs",
-              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Controllers\\OficinaController.cs",
-              "RelativeToolTip": "ELLP-Project\\Controllers\\OficinaController.cs",
-              "ViewState": "AgIAAIAAAAAAAAAAAAAAAJ0AAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T22:06:07.179Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "OficinaModel.cs",
               "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Models\\OficinaModel.cs",
               "RelativeDocumentMoniker": "ELLP-Project\\Models\\OficinaModel.cs",
@@ -225,7 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "OficinaRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Persistence\\Repositorios\\OficinaRepositorio.cs",
               "RelativeDocumentMoniker": "ELLP-Project\\Persistence\\Repositorios\\OficinaRepositorio.cs",
@@ -238,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ProfessorServices.cs",
               "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Services\\ProfessorServices.cs",
               "RelativeDocumentMoniker": "ELLP-Project\\Services\\ProfessorServices.cs",
@@ -251,7 +225,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "FaltaServices.cs",
               "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Services\\FaltaServices.cs",
               "RelativeDocumentMoniker": "ELLP-Project\\Services\\FaltaServices.cs",
@@ -264,33 +238,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "LoginServices.cs",
               "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Services\\LoginServices.cs",
               "RelativeDocumentMoniker": "ELLP-Project\\Services\\LoginServices.cs",
               "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Services\\LoginServices.cs",
               "RelativeToolTip": "ELLP-Project\\Services\\LoginServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABYAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-01T18:32:14.971Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "LoginController.cs",
               "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "ELLP-Project\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Controllers\\LoginController.cs*",
-              "RelativeToolTip": "ELLP-Project\\Controllers\\LoginController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "ELLP-Project\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBUAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-01T21:48:32.42Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ILoginServices.cs",
               "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Persistence\\Interfaces\\InterfacesServices\\ILoginServices.cs",
               "RelativeDocumentMoniker": "ELLP-Project\\Persistence\\Interfaces\\InterfacesServices\\ILoginServices.cs",
@@ -303,20 +277,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Program.cs",
               "RelativeDocumentMoniker": "ELLP-Project\\Program.cs",
               "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Program.cs",
               "RelativeToolTip": "ELLP-Project\\Program.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAEwDYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAEwCEAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-31T20:47:16.146Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "FaltaModel.cs",
               "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Models\\FaltaModel.cs",
               "RelativeDocumentMoniker": "ELLP-Project\\Models\\FaltaModel.cs",
@@ -329,7 +303,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MonitorModel.cs",
+              "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Models\\MonitorModel.cs",
+              "RelativeDocumentMoniker": "ELLP-Project\\Models\\MonitorModel.cs",
+              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Models\\MonitorModel.cs",
+              "RelativeToolTip": "ELLP-Project\\Models\\MonitorModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwAgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T20:09:21.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OficinaController.cs",
+              "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Controllers\\OficinaController.cs",
+              "RelativeDocumentMoniker": "ELLP-Project\\Controllers\\OficinaController.cs",
+              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Controllers\\OficinaController.cs",
+              "RelativeToolTip": "ELLP-Project\\Controllers\\OficinaController.cs",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAAAJ0AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T22:06:07.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Models\\LoginModel.cs",
+              "RelativeDocumentMoniker": "ELLP-Project\\Models\\LoginModel.cs",
+              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Models\\LoginModel.cs",
+              "RelativeToolTip": "ELLP-Project\\Models\\LoginModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T00:16:06.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "FaltaController.cs",
               "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Controllers\\FaltaController.cs",
               "RelativeDocumentMoniker": "ELLP-Project\\Controllers\\FaltaController.cs",
@@ -342,7 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ProfessorController.cs",
               "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Controllers\\ProfessorController.cs",
               "RelativeDocumentMoniker": "ELLP-Project\\Controllers\\ProfessorController.cs",
@@ -355,7 +368,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "OficinaServices.cs",
               "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Services\\OficinaServices.cs",
               "RelativeDocumentMoniker": "ELLP-Project\\Services\\OficinaServices.cs",
@@ -364,19 +377,6 @@
               "ViewState": "AgIAAFMAAAAAAAAAAAAowG0AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-01T19:58:16.818Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "MonitorModel.cs",
-              "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Models\\MonitorModel.cs",
-              "RelativeDocumentMoniker": "ELLP-Project\\Models\\MonitorModel.cs",
-              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Models\\MonitorModel.cs",
-              "RelativeToolTip": "ELLP-Project\\Models\\MonitorModel.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAqwAgAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T20:09:21.485Z",
               "EditorCaption": ""
             },
             {
@@ -418,7 +418,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "ProfessorRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Persistence\\Repositorios\\ProfessorRepositorio.cs",
               "RelativeDocumentMoniker": "ELLP-Project\\Persistence\\Repositorios\\ProfessorRepositorio.cs",

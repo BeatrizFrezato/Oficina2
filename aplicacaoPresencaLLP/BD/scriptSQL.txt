@@ -1,4 +1,5 @@
 create database dbllp;
+use dbllp;
 
 -- Tabela: Professor
 CREATE TABLE Professor (

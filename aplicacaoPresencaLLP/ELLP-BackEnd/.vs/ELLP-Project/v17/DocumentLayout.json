@@ -35,6 +35,14 @@
       "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\controllers\\faltacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\oficina2\\aplicacaopresencallp\\ellp-backend\\ellp-project\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\oficina2\\aplicacaopresencallp\\ellp-backend\\ellp-project\\services\\alunoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\services\\alunoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\oficina2\\aplicacaopresencallp\\ellp-backend\\ellp-project\\services\\faltaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\services\\faltaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -43,6 +51,7 @@
       "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\persistence\\repositorios\\faltarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\oficina2\\aplicacaopresencallp\\ellp-backend\\ellp-project\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -55,6 +64,8 @@
       "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\persistence\\interfaces\\interfacesservices\\ifaltaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+=======
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|c:\\users\\raposo\\documents\\github\\oficina2\\aplicacaopresencallp\\ellp-backend\\ellp-project\\persistence\\interfaces\\interfacesservices\\ialunoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74023DBC-5DF4-4FB3-B9A8-DE04179C3844}|ELLP-Project\\ELLP-Project.csproj|solutionrelative:ellp-project\\persistence\\interfaces\\interfacesservices\\ialunoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -183,6 +194,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< Updated upstream
               "Title": "OficinaController.cs",
               "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Controllers\\OficinaController.cs",
               "RelativeDocumentMoniker": "ELLP-Project\\Controllers\\OficinaController.cs",
@@ -191,11 +203,61 @@
               "ViewState": "AgIAAHkAAAAAAAAAAAAQwH8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-01T22:06:07.179Z",
+=======
+              "Title": "FaltaController.cs",
+              "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Controllers\\FaltaController.cs",
+              "RelativeDocumentMoniker": "ELLP-Project\\Controllers\\FaltaController.cs",
+              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Controllers\\FaltaController.cs",
+              "RelativeToolTip": "ELLP-Project\\Controllers\\FaltaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T20:53:25.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AlunoController.cs",
+              "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Controllers\\AlunoController.cs",
+              "RelativeDocumentMoniker": "ELLP-Project\\Controllers\\AlunoController.cs",
+              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Controllers\\AlunoController.cs",
+              "RelativeToolTip": "ELLP-Project\\Controllers\\AlunoController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAADwv4YAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T20:42:03.287Z",
+>>>>>>> Stashed changes
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
+<<<<<<< Updated upstream
+=======
+              "Title": "AlunoRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Persistence\\Repositorios\\AlunoRepositorio.cs",
+              "RelativeDocumentMoniker": "ELLP-Project\\Persistence\\Repositorios\\AlunoRepositorio.cs",
+              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Persistence\\Repositorios\\AlunoRepositorio.cs",
+              "RelativeToolTip": "ELLP-Project\\Persistence\\Repositorios\\AlunoRepositorio.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T18:11:43.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IAlunoRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Persistence\\Interfaces\\InterfacesRepositorio\\IAlunoRepositorio.cs",
+              "RelativeDocumentMoniker": "ELLP-Project\\Persistence\\Interfaces\\InterfacesRepositorio\\IAlunoRepositorio.cs",
+              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Persistence\\Interfaces\\InterfacesRepositorio\\IAlunoRepositorio.cs",
+              "RelativeToolTip": "ELLP-Project\\Persistence\\Interfaces\\InterfacesRepositorio\\IAlunoRepositorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T22:29:32.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+>>>>>>> Stashed changes
               "Title": "FaltaRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Persistence\\Repositorios\\FaltaRepositorio.cs",
               "RelativeDocumentMoniker": "ELLP-Project\\Persistence\\Repositorios\\FaltaRepositorio.cs",
@@ -231,7 +293,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 12,
+=======
+              "DocumentIndex": 4,
+>>>>>>> Stashed changes
               "Title": "IFaltaServices.cs",
               "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Persistence\\Interfaces\\InterfacesServices\\IFaltaServices.cs",
               "RelativeDocumentMoniker": "ELLP-Project\\Persistence\\Interfaces\\InterfacesServices\\IFaltaServices.cs",
@@ -243,7 +309,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 8,
+=======
+              "DocumentIndex": 3,
+>>>>>>> Stashed changes
               "Title": "FaltaServices.cs",
               "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Services\\FaltaServices.cs",
               "RelativeDocumentMoniker": "ELLP-Project\\Services\\FaltaServices.cs",
@@ -255,6 +325,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 4,
               "Title": "MonitorController.cs",
               "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Controllers\\MonitorController.cs",
@@ -262,6 +333,15 @@
               "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Controllers\\MonitorController.cs",
               "RelativeToolTip": "ELLP-Project\\Controllers\\MonitorController.cs",
               "ViewState": "AgIAAHcAAAAAAAAAAAAqwI4AAAA4AAAAAAAAAA==",
+=======
+              "DocumentIndex": 2,
+              "Title": "AlunoServices.cs",
+              "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Services\\AlunoServices.cs",
+              "RelativeDocumentMoniker": "ELLP-Project\\Services\\AlunoServices.cs",
+              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Services\\AlunoServices.cs",
+              "RelativeToolTip": "ELLP-Project\\Services\\AlunoServices.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAewDUAAAAJAAAAAAAAAA==",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-31T20:40:33.735Z"
             },
@@ -411,7 +491,23 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 20,
+=======
+              "DocumentIndex": 14,
+              "Title": "OficinaModel.cs",
+              "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Models\\OficinaModel.cs",
+              "RelativeDocumentMoniker": "ELLP-Project\\Models\\OficinaModel.cs",
+              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Models\\OficinaModel.cs",
+              "RelativeToolTip": "ELLP-Project\\Models\\OficinaModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T20:09:09.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+>>>>>>> Stashed changes
               "Title": "LoginModel.cs",
               "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Models\\LoginModel.cs",
               "RelativeDocumentMoniker": "ELLP-Project\\Models\\LoginModel.cs",
@@ -423,7 +519,23 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 21,
+=======
+              "DocumentIndex": 16,
+              "Title": "MonitorServices.cs",
+              "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Services\\MonitorServices.cs",
+              "RelativeDocumentMoniker": "ELLP-Project\\Services\\MonitorServices.cs",
+              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Services\\MonitorServices.cs",
+              "RelativeToolTip": "ELLP-Project\\Services\\MonitorServices.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAgwH4AAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T18:52:44.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+>>>>>>> Stashed changes
               "Title": "ProfessorServices.cs",
               "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Services\\ProfessorServices.cs",
               "RelativeDocumentMoniker": "ELLP-Project\\Services\\ProfessorServices.cs",
@@ -471,7 +583,23 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 24,
+=======
+              "DocumentIndex": 20,
+              "Title": "OficinaServices.cs",
+              "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Services\\OficinaServices.cs",
+              "RelativeDocumentMoniker": "ELLP-Project\\Services\\OficinaServices.cs",
+              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Services\\OficinaServices.cs",
+              "RelativeToolTip": "ELLP-Project\\Services\\OficinaServices.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAAAEwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T19:58:16.818Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+>>>>>>> Stashed changes
               "Title": "IOficinaServices.cs",
               "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Persistence\\Interfaces\\InterfacesServices\\IOficinaServices.cs",
               "RelativeDocumentMoniker": "ELLP-Project\\Persistence\\Interfaces\\InterfacesServices\\IOficinaServices.cs",
@@ -684,6 +812,21 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-01T16:35:03.821Z"
+<<<<<<< Updated upstream
+=======
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "MonitorController.cs",
+              "DocumentMoniker": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Controllers\\MonitorController.cs",
+              "RelativeDocumentMoniker": "ELLP-Project\\Controllers\\MonitorController.cs",
+              "ToolTip": "C:\\Users\\raposo\\Documents\\GitHub\\Oficina2\\aplicacaoPresencaLLP\\ELLP-BackEnd\\ELLP-Project\\Controllers\\MonitorController.cs",
+              "RelativeToolTip": "ELLP-Project\\Controllers\\MonitorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T20:40:33.735Z"
+>>>>>>> Stashed changes
             }
           ]
         }

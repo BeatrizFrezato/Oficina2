@@ -1,0 +1,41 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+bin/
+obj/
+
+# Rider
+.idea/
+
+# Logs
+*.log
+
+# NuGet packages
+*.nupkg
+*.snupkg
+packages/
+
+# Publish output
+publish/
+
+# Arquivos de configuração locais do Visual Studio Code
+.vscode/
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Resposta de cache do Swagger
+swagger.json
+
+# Outros arquivos gerados
+*.dbmdl
+
+# Ignore arquivos do sistema operacional
+Thumbs.db
+.DS_Store

@@ -18,69 +18,131 @@ namespace ELLP_Project.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<AlunoModel>> GetTodos()
         {
-            var alunos = _alunoServices.GetAlunos();
-            return Ok(alunos);
+            try
+            {
+                var alunos = _alunoServices.GetAlunos();
+
+                if(!alunos.Any())
+                    return NoContent();
+
+                return Ok(alunos);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Erro interno:"+ex.Message);
+            }
+            
         }
 
         [HttpGet("{id}")]
         public ActionResult<AlunoModel> GetPorId(int alunoId)
         {
-            var aluno = _alunoServices.GetAlunoById(alunoId);
-            if (aluno == null)
-                return NotFound("Aluno não encontrado.");
-
-            return Ok(aluno);
+            try
+            {
+                return Ok(_alunoServices.GetAlunoById(alunoId));
+            }
+            catch (ArgumentException ex)
+            {
+                return NotFound(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Erro interno: " + ex.Message);
+            }
+          
         }
 
         [HttpPost]
         public ActionResult CreateAluno([FromBody] AlunoModel novoAluno)
         {
-            _alunoServices.CadastrarAluno(novoAluno);
-            return CreatedAtAction(nameof(GetPorId), new { id = novoAluno.AlunoId }, novoAluno);
+            try
+            {
+                _alunoServices.CadastrarAluno(novoAluno);
+                return CreatedAtAction(nameof(GetPorId), new { id = novoAluno.AlunoId }, novoAluno);
+            }
+            catch(ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, "Erro Interno: " + ex.Message);
+            }
         }
 
         [HttpPut("atualizarAluno/{id}")]
         public ActionResult Atualizar(int id, [FromBody] AlunoModel alunoAtualizado)
         {
-      
-            if (_alunoServices.GetAlunoById(id) == null)
-                return NotFound("Aluno não encontrado.");
-
-            _alunoServices.AtualizarAluno(id, alunoAtualizado);
-            return Ok("Aluno atualizado.");
+            try
+            {
+                _alunoServices.AtualizarAluno(id, alunoAtualizado);
+                return Ok("Aluno atualizado.");
+            }
+            catch(ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, "Erro Interno: " + ex.Message);
+            }
         }
 
         [HttpDelete("excluirAluno/{id}")]
         public ActionResult Deletar(int id)
         {
-            var alunoExistente = _alunoServices.GetAlunoById(id);
-            if (alunoExistente == null)
-                return NotFound("Aluno não encontrado.");
+            try
+            {
+                _alunoServices.RemoverAluno(id);
+                return Ok("Aluno removido.");
+            }
+            catch(ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, "Erro Interno: " + ex.Message);
+            }
 
-            _alunoServices.RemoverAluno(id);
-            return Ok("Aluno removido.");
         }
 
         [HttpPut("{id}/nome")]
         public ActionResult AlterarNome(int id, [FromBody] string novoNome)
         {
-            var aluno = _alunoServices.GetAlunoById(id);
-            if (aluno == null)
-                return NotFound("Aluno não encontrado.");
-
-            aluno.AlunoNome = novoNome;
-            _alunoServices.AtualizarAluno(id, aluno);
-            return Ok("Nome alterado.");
+            try
+            {
+                var aluno = _alunoServices.GetAlunoById(id);
+                aluno.AlunoNome = novoNome;
+                _alunoServices.AtualizarAluno(id, aluno);
+                return Ok("Nome alterado.");
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, "Erro Interno: " + ex.Message);
+            }
         }
 
         [HttpGet("{id}/oficina")]
         public ActionResult <OficinaModel> ListarOficinas(int id)
         {
-            var aluno = _alunoServices.GetAlunoById(id);
-            if (aluno == null)
-                return NotFound("Aluno não encontrado.");
-
-            return Ok(aluno.AlunoOficinas);
+            try
+            {
+                var aluno = _alunoServices.GetAlunoById(id);
+                return Ok(aluno.AlunoOficinas);
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, "Erro Interno: " + ex.Message);
+            }
         }
     }
 }

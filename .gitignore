@@ -1,7 +1,9 @@
 # Visual Studio
 .vs/
+
 *.suo
 *.user
+
 *.userosscache
 *.sln.docstates
 
@@ -15,7 +17,6 @@ obj/
 # Logs
 *.log
 
-# NuGet
 *.nupkg
 *.snupkg
 packages/
@@ -43,3 +44,4 @@ Thumbs.db
 # Arquivos específicos do Visual Studio DesignTime build
 .aplicacaoPresencaLLP/ELLP-BackEnd/.vs/
 .aplicacaoPresencaLLP/ELLP-BackEnd/ELLP-Project/obj/
+

@@ -1,4 +1,5 @@
 ﻿using ELLP_Project.Models;
+using ELLP_Project.Persistence.DBContext;
 using ELLP_Project.Persistence.Interfaces.InterfacesServices;
 using ELLP_Project.Persistence.Repositorios;
 using ELLP_Project.Utils;
@@ -11,11 +12,12 @@ namespace ELLP_Project.Services
 
         private readonly MonitorRepositorio _monitorRepositorio;
         private readonly OficinaRepositorio _oficinaRepositorio;
-
-        public MonitorServices(MonitorRepositorio monitorRepositorio, OficinaRepositorio oficinaRepositorio)
+        private readonly AppDbContext _context;
+        public MonitorServices(MonitorRepositorio monitorRepositorio, OficinaRepositorio oficinaRepositorio, AppDbContext context)
         {
             _monitorRepositorio = monitorRepositorio;
             _oficinaRepositorio = oficinaRepositorio;
+            _context = context;
         }
 
 
@@ -51,8 +53,9 @@ namespace ELLP_Project.Services
                 monitor.SenhaHash = monitorAtual.SenhaHash;
                 monitor.Salt = monitorAtual.Salt;
             }
-
-            return _monitorRepositorio.AlterarMonitor(MonitorId, monitor);
+            monitorAtual = _monitorRepositorio.AlterarMonitor(MonitorId, monitor)
+            _context.SaveChanges();
+            return monitorAtual;
 
         }
 
@@ -75,8 +78,9 @@ namespace ELLP_Project.Services
 
             monitor.Salt = PasswordUtils.CriarSalt();
             monitor.SenhaHash = PasswordUtils.GerarHash(monitor.SenhaHash, monitor.Salt);
-
-            return _monitorRepositorio.AdicionarMonitor(monitor);
+            var newMonitor = _monitorRepositorio.AdicionarMonitor(monitor)
+            _context.SaveChanges();
+            return newMonitor;
 
         }
 
@@ -97,7 +101,9 @@ namespace ELLP_Project.Services
         {
             if (_monitorRepositorio.GetMonitorById(monitorId) == null)
                 throw new ArgumentException("Não existe monitor com esse ID.");
-            return _monitorRepositorio.DeleteMonitor(monitorId);
+            _monitorRepositorio.DeleteMonitor(monitorId)
+            _context.SaveChanges();
+            return true;
         }
 
         public bool AtualizarLogin(int monitorId, string login)
@@ -107,6 +113,7 @@ namespace ELLP_Project.Services
                 throw new ArgumentException("Não existe monitor com esse ID");
             monitor.Login = login;
             _monitorRepositorio.AlterarMonitor(monitorId, monitor);
+            _context.SaveChanges();
             return true;
         }
 
@@ -115,9 +122,14 @@ namespace ELLP_Project.Services
             MonitorModel monitor = _monitorRepositorio.GetMonitorById(monitorId);
             if (monitor == null)
                 throw new ArgumentException("Não existe monitor com esse ID");
+
             monitor.Salt = PasswordUtils.CriarSalt();
+
             monitor.SenhaHash = PasswordUtils.GerarHash(senha, monitor.Salt);
+
             _monitorRepositorio.AlterarMonitor(monitorId, monitor);
+
+            _context.SaveChanges();
             return true;
         }
 
@@ -127,9 +139,13 @@ namespace ELLP_Project.Services
             if (monitor == null)
                 throw new ArgumentException("Não existe monitor com esse ID");
             monitor.OficinaId = oficinaId;
+
             monitor.Oficina = _oficinaRepositorio.GetOficinaById(oficinaId);
 
-            return _monitorRepositorio.AlterarMonitor(monitorId, monitor);
+            monitor = _monitorRepositorio.AlterarMonitor(monitorId, monitor);
+
+            _context.SaveChanges() ;
+            return monitor;
         }
     }
 }

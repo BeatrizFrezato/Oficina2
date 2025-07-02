@@ -4,9 +4,14 @@ namespace ELLP_Project.Models
 {
     public class MonitorModel : IMonitorEntidade
     {
+
+        public MonitorModel()
+        {
+            
+        }
         public int Id { get; set; }
         public string Nome { get; set; }
-        public OficinaModel? Oficina { get; set; }
+        public virtual OficinaModel? Oficina { get; set; }
         public int? OficinaId { get; set; }
         public string Salt { get; set; }
         public string SenhaHash { get; set; }

@@ -4,8 +4,18 @@ using ELLP_Project.Interfaces.InterfacesServices;
 using ELLP_Project.Persistence.Interfaces.InterfacesRepositorio;
 using ELLP_Project.Persistence.Interfaces.InterfacesServices;
 using ELLP_Project.Persistence.Repositorios;
+using Microsoft.EntityFrameworkCore;
+using ELLP_Project.Persistence.DBContext;
 
 var builder = WebApplication.CreateBuilder(args);
+
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))
+           .UseLazyLoadingProxies());
 
 
 

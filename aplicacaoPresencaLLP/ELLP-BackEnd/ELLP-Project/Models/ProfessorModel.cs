@@ -4,9 +4,14 @@ namespace ELLP_Project.Models
 {
     public class ProfessorModel : IProfessorEntidade
     {
+        public ProfessorModel()
+        {
+            Oficinas = new List<OficinaModel>();
+        }
+
         public int Id { get; set; }
         public string Nome { get; set; }
-        public List<OficinaModel> Oficinas { get; set; } = new();
+        public virtual List<OficinaModel> Oficinas { get; set; }
         public string Salt { get; set; }
         public string SenhaHash { get; set; }
         public string Login { get; set; }

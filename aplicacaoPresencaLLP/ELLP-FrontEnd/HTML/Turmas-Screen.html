@@ -12,11 +12,14 @@
     <section class="sideBar">
         <div class="optionsSection">
             <h2 id="ellpTitle">Menu</h2>
-            <div class="sideBarOptions">
+            <div class="sideBarOptions" onclick="home()">
+                Página Inicial
+            </div>
+            <div class="sideBarOptions" onclick="telaTurmas()">
                 Turmas
             </div>
-            <div class="sideBarOptions">
-                Gerar Relatório
+            <div class="sideBarOptions" onclick="telaCriarTurma()">
+                Criar Turma
             </div>
         </div>
         <img src="../Images/logo-navbar.png" alt="" srcset="" id="ellpLogo">
@@ -103,6 +106,19 @@
                 </div>
             </div>
         </div>
-    </section>    
+    </section>  
+    <script>
+        function home(){
+            window.location.href = "./Home-Screen.html"
+        }
+
+        function telaCriarTurma(){
+            window.location.href = "./CadastrarTurma-Screen.html"
+        }
+
+        function telaTurmas(){
+            window.location.href ="./Turmas-Screen.html"
+        }
+    </script>  
 </body>
 </html>

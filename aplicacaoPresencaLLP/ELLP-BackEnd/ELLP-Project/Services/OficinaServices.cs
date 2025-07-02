@@ -1,4 +1,5 @@
 ﻿using ELLP_Project.Models;
+using ELLP_Project.Persistence.DBContext;
 using ELLP_Project.Persistence.Interfaces.InterfacesServices;
 using ELLP_Project.Persistence.Repositorios;
 
@@ -10,12 +11,14 @@ namespace ELLP_Project.Services
         private readonly OficinaRepositorio _oficinaRepositorio;
         private readonly ProfessorRepositorio _professorRepositorio;
         private readonly MonitorRepositorio _monitorRepositorio;
+        private readonly AppDbContext _context;
 
-        public OficinaServices(OficinaRepositorio oficinaRepositorio, ProfessorRepositorio professorRepositorio, MonitorRepositorio monitorRepositorio)
+        public OficinaServices(OficinaRepositorio oficinaRepositorio, ProfessorRepositorio professorRepositorio, MonitorRepositorio monitorRepositorio, AppDbContext context)
         {
             _oficinaRepositorio = oficinaRepositorio;
             _professorRepositorio = professorRepositorio;
             _monitorRepositorio = monitorRepositorio;
+            _context = context;
         }
 
         public OficinaModel AtualizarOficina(int OficinaId, OficinaModel oficina)
@@ -39,7 +42,11 @@ namespace ELLP_Project.Services
 
             oficina.Professor = _professorRepositorio.GetProfessorById(oficina.ProfessorId);
 
-            return _oficinaRepositorio.AtualizarOficina(OficinaId, oficina);
+            var novaOficina = _oficinaRepositorio.AtualizarOficina(OficinaId, oficina);
+
+            _context.SaveChanges();
+
+            return novaOficina;
         }
 
         public OficinaModel CadastrarOficina(OficinaModel oficina)
@@ -56,7 +63,11 @@ namespace ELLP_Project.Services
 
             oficina.Professor = _professorRepositorio.GetProfessorById(oficina.ProfessorId);
 
-            return _oficinaRepositorio.AdicionarOficina(oficina);
+            var novaOficina = _oficinaRepositorio.AdicionarOficina(oficina);
+
+            _context.SaveChanges();
+
+            return novaOficina;
         }
 
         public OficinaModel? GetOficinaById(int oficinaId)
@@ -80,12 +91,17 @@ namespace ELLP_Project.Services
             }
 
             oficina.RemoverAlunoOficina(alunoId);
+
+            _context.SaveChanges();
+
             return true;
         }
 
         public bool RemoverOficina(int oficinaId)
         {
-            return _oficinaRepositorio.DeleteOficina(oficinaId);
+            _oficinaRepositorio.DeleteOficina(oficinaId);
+            _context.SaveChanges();
+            return true;
         }
 
         public OficinaModel AlterarProfessor(int oficinaId, int professorId)
@@ -96,7 +112,11 @@ namespace ELLP_Project.Services
             ProfessorModel professor = _professorRepositorio.GetProfessorById(professorId);
             if (professor == null)
                 throw new ArgumentException("Não existe professor com esse ID.");
-            return _oficinaRepositorio.AlterarProfessor(oficinaId, professor);
+
+            oficina = _oficinaRepositorio.AlterarProfessor(oficinaId, professor);
+
+            _context.SaveChanges();
+            return oficina;
         }
 
         public bool RemoverMonitor(int oficinaId, int monitorId)
@@ -108,6 +128,8 @@ namespace ELLP_Project.Services
             if (oficina == null)
                 throw new ArgumentException("Não existe oficina com esse ID.");
             _oficinaRepositorio.RemoverMonitor(oficinaId, monitorId);
+
+            _context.SaveChanges();
 
             return true;
         }

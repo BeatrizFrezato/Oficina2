@@ -1,4 +1,5 @@
 ﻿using ELLP_Project.Models;
+using ELLP_Project.Persistence.DBContext;
 using ELLP_Project.Persistence.Interfaces.InterfacesServices;
 using ELLP_Project.Persistence.Repositorios;
 using ELLP_Project.Utils;
@@ -9,10 +10,12 @@ namespace ELLP_Project.Services
     {
 
         private readonly ProfessorRepositorio _professorRepositorio;
+        private readonly AppDbContext _context;
 
-        public ProfessorServices(ProfessorRepositorio professorRepositorio)
+        public ProfessorServices(ProfessorRepositorio professorRepositorio, AppDbContext context)
         {
             _professorRepositorio = professorRepositorio;
+            _context = context;
         }
 
         public bool AtualizarLogin(int professorId, string login)
@@ -31,6 +34,8 @@ namespace ELLP_Project.Services
             professor.Login = login;
 
             _professorRepositorio.AlterarProfessor(professorId, professor);
+
+            _context.SaveChanges();
 
             return true;
         }
@@ -59,7 +64,11 @@ namespace ELLP_Project.Services
                 professor.Nome = professorAtual.Nome;
             }
 
-            return _professorRepositorio.AlterarProfessor(ProfessorId, professor);
+            var novoProfessor = _professorRepositorio.AlterarProfessor(ProfessorId, professor);
+
+            _context.SaveChanges();
+
+            return novoProfessor;
         }
 
         public bool AtualizarSenha(int professorId, string senha)
@@ -76,6 +85,9 @@ namespace ELLP_Project.Services
             professor.Salt = PasswordUtils.CriarSalt();
             professor.SenhaHash = PasswordUtils.GerarHash(senha, professor.Salt);
 
+            _professorRepositorio.AlterarProfessor(professorId, professor);
+
+            _context.SaveChanges();
             return true;
         }
 
@@ -96,7 +108,10 @@ namespace ELLP_Project.Services
                 throw new ArgumentException("O campo nome não pode estar vazio.");
             }
 
-            return _professorRepositorio.AdicionarProfessor(professor);
+            var novoProfessor = _professorRepositorio.AdicionarProfessor(professor);
+
+            _context.SaveChanges() ;
+            return novoProfessor;
         }
 
         public ProfessorModel? GetProfessorById(int professorId)
@@ -116,7 +131,10 @@ namespace ELLP_Project.Services
         {
             if (_professorRepositorio.GetProfessorById(professorId) == null)
                 throw new ArgumentException("Não existe professor com esse ID.");
-            return _professorRepositorio.DeleteProfessor(professorId);
+
+            _professorRepositorio.DeleteProfessor(professorId);
+            _context.SaveChanges();
+            return true;
         }
 
 

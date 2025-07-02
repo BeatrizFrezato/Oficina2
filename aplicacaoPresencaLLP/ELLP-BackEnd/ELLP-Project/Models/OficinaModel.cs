@@ -4,11 +4,16 @@ namespace ELLP_Project.Models
 {
     public class OficinaModel : IOficinaEntidade
     {
+        public OficinaModel()
+        {
+            Alunos = new List<AlunoModel>();
+            Monitores = new List<MonitorModel>();
+        }
         public int OficinaId { get; set; }
         public string OficinaNome { get; set; }
-        public List<AlunoModel>  Alunos { get; set; } = new List<AlunoModel>();
-        public List<MonitorModel> Monitores { get; set; } = new List<MonitorModel>();
-        public ProfessorModel Professor { get; set; }
+        public virtual List<AlunoModel>  Alunos { get; set; } 
+        public virtual List<MonitorModel> Monitores { get; set; } 
+        public virtual ProfessorModel Professor { get; set; }
         public int ProfessorId { get; set; }
 
         public void AlterarNomeOficina(string nome)

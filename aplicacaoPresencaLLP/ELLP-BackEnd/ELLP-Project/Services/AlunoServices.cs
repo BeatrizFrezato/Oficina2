@@ -1,4 +1,5 @@
 ﻿using ELLP_Project.Models;
+using ELLP_Project.Persistence.DBContext;
 using ELLP_Project.Persistence.Interfaces.InterfacesRepositorio;
 using ELLP_Project.Persistence.Interfaces.InterfacesServices;
 using ELLP_Project.Persistence.Repositorios;
@@ -10,12 +11,13 @@ namespace ELLP_Project.Services
 
         private readonly AlunoRepositorio _alunoRepositorio;
         private readonly OficinaRepositorio _oficinaRepositorio;
+        private readonly AppDbContext _context;
 
-        public AlunoServices(AlunoRepositorio alunoRepositorio, OficinaRepositorio oficinaRepositorio)
+        public AlunoServices(AlunoRepositorio alunoRepositorio, OficinaRepositorio oficinaRepositorio, AppDbContext context)
         {
             _alunoRepositorio = alunoRepositorio;
             _oficinaRepositorio = oficinaRepositorio;
-
+            _context = context;
         }
 
         public AlunoModel AtualizarAluno(int alunoId, AlunoModel aluno)
@@ -26,20 +28,24 @@ namespace ELLP_Project.Services
             if (_alunoRepositorio.GetAlunoById(alunoId) == null)
                 throw new ArgumentException("Não existe aluno com o ID informado");
 
-            if (aluno.AlunoOficinas == null)
+            if (aluno.AlunoOficina == null)
             {
-                aluno.AlunoOficinas = _oficinaRepositorio.GetOficinaById(aluno.OficinaId);
+                aluno.AlunoOficina = _oficinaRepositorio.GetOficinaById(aluno.OficinaId);
             }
 
-            return _alunoRepositorio.AtualizarAluno(alunoId, aluno);
+            var novoAluno = _alunoRepositorio.AtualizarAluno(alunoId, aluno);
+
+            _context.SaveChanges();
+            return novoAluno;
         }
             
         public AlunoModel CadastrarAluno(AlunoModel aluno)
         {
             if (string.IsNullOrWhiteSpace(aluno.AlunoNome))
                 throw new ArgumentException("Nome do aluno é obrigatório");
-
-            return _alunoRepositorio.AdicionarAluno(aluno);     
+            var novoAluno = _alunoRepositorio.AdicionarAluno(aluno);
+            _context.SaveChanges();
+            return novoAluno;     
         }
 
         public AlunoModel? GetAlunoById(int alunoId)
@@ -60,7 +66,10 @@ namespace ELLP_Project.Services
             if (_alunoRepositorio.GetAlunoById(alunoId) == null)
                 throw new ArgumentException("Não existe aluno com esse ID");
 
-            return _alunoRepositorio.DeleteAluno(alunoId);
+            _alunoRepositorio.DeleteAluno(alunoId);
+
+            _context.SaveChanges();
+            return true;
         }
     }
 }

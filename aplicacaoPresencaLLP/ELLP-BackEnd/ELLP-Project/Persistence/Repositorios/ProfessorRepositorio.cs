@@ -1,22 +1,29 @@
 ﻿using ELLP_Project.Models;
+using ELLP_Project.Persistence.DBContext;
 using ELLP_Project.Persistence.Interfaces.InterfacesRepositorio;
+using Microsoft.EntityFrameworkCore;
 
 namespace ELLP_Project.Persistence.Repositorios
 {
     public class ProfessorRepositorio : IProfessorRepositorio
     {
 
-        private readonly List<ProfessorModel> _professor = new();
+        private readonly AppDbContext _context;
+
+        public ProfessorRepositorio(AppDbContext context)
+        {
+            _context = context;
+        }
 
         public ProfessorModel AdicionarProfessor(ProfessorModel professor)
         {
-            _professor.Add(professor);
+            _context.Professores.Add(professor);
             return professor;
         }
 
         public ProfessorModel AlterarProfessor(int id, ProfessorModel professor)
         {
-            ProfessorModel getProfessor = _professor.FirstOrDefault(p=> p.Id == id);
+            ProfessorModel getProfessor = _context.Professores.Include(p => p.Oficinas).FirstOrDefault(p => p.Id == id);
             if (getProfessor == null)
                 return null;
             getProfessor.AlterarNome(professor.Nome);
@@ -24,29 +31,33 @@ namespace ELLP_Project.Persistence.Repositorios
             getProfessor.DefinirSalt(professor.Salt);
             getProfessor.DefinirSenhaHash(professor.SenhaHash);
 
-            if (professor.Oficinas.Count != 0)
-                getProfessor.Oficinas = professor.Oficinas.ToList();
+            if (professor.Oficinas.Count != 0) 
+            {
+                getProfessor.Oficinas.Clear();
+                foreach (var oficina in professor.Oficinas)
+                    getProfessor.Oficinas.Add(oficina);
+            }
 
             return getProfessor;
         }
 
         public bool DeleteProfessor(int id)
         {
-            ProfessorModel getProfessor = _professor.FirstOrDefault(p => p.Id==id);
+            ProfessorModel getProfessor = _context.Professores.Include(p => p.Oficinas).FirstOrDefault(p => p.Id==id);
             if(getProfessor == null)
                 return false;
-            _professor.Remove(getProfessor);
+            _context.Professores.Remove(getProfessor);
             return true;
         }
 
         public IEnumerable<ProfessorModel> GetAllProfessores()
         {
-            return _professor;
+            return _context.Professores.Include(p => p.Oficinas);
         }
 
         public ProfessorModel? GetProfessorById(int id)
         {
-            return _professor.FirstOrDefault(p=> p.Id==id); 
+            return _context.Professores.Include(p => p.Oficinas).FirstOrDefault(p => p.Id == id);
         }
     }
 }

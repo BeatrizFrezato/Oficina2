@@ -4,10 +4,14 @@ namespace ELLP_Project.Models
 {
     public class AlunoModel:IAlunoEntidade
     {
+        public AlunoModel()
+        {
+            AlunoFaltas = new List<FaltaModel>();
+        }
         public int AlunoId { get; set; }
         public string AlunoNome { get; set; }
-        public List<FaltaModel> AlunoFaltas { get; set; } = new();
-        public OficinaModel AlunoOficinas { get; set; } = new();
+        public virtual List<FaltaModel> AlunoFaltas { get; set; }
+        public virtual OficinaModel AlunoOficina { get; set; }
         public int OficinaId { get; set; }
 
         public void AdicionarFalta(FaltaModel falta)
@@ -30,9 +34,9 @@ namespace ELLP_Project.Models
             return AlunoFaltas.Count;
         }
 
-        public OficinaModel OficinaAluno(OficinaModel oficina)
+        public OficinaModel DefinirOficina(OficinaModel oficina)
         {
-            AlunoOficinas = oficina;
+            AlunoOficina = oficina;
             OficinaId = oficina.OficinaId;
             return oficina;
         }

@@ -1,26 +1,33 @@
 ﻿using ELLP_Project.Models;
+using ELLP_Project.Persistence.DBContext;
 using ELLP_Project.Persistence.Interfaces.InterfacesRepositorio;
 using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.EntityFrameworkCore;
 
 namespace ELLP_Project.Persistence.Repositorios
 {
     public class MonitorRepositorio : IMonitorRepositorio
     {
-        private readonly List<MonitorModel> _monitores = new List<MonitorModel>();
+        private readonly AppDbContext _context;
+
+        public MonitorRepositorio(AppDbContext context)
+        {
+            _context = context;
+        }
 
         public MonitorModel AdicionarMonitor(MonitorModel monitor)
         {
-            _monitores.Add(monitor);
+            _context.Monitores.Add(monitor);
             return monitor;
         }
 
         public MonitorModel AlterarMonitor(int monitorId, MonitorModel monitor)
         {
-            MonitorModel getMonitor = _monitores.FirstOrDefault(monitor => monitor.Id == monitorId);
+            MonitorModel getMonitor = _context.Monitores.Include(m => m.Oficina).FirstOrDefault(monitor => monitor.Id == monitorId);
             if (getMonitor == null)
                 return null;
             getMonitor.AlterarNome(monitor.Nome);
-
+    
             getMonitor.AdicionarOficina(monitor.Oficina);
 
             getMonitor.DefinirSalt(monitor.Salt);
@@ -32,20 +39,21 @@ namespace ELLP_Project.Persistence.Repositorios
 
         public bool DeleteMonitor(int monitorId)
         {
-            if(_monitores.FirstOrDefault(monitor=>monitor.Id == monitorId) == null)
+            var monitor = _context.Monitores.Include(m=>m.Oficina).FirstOrDefault(m => m.Id == monitorId);
+            if(monitor == null)
                 return false;
-            _monitores.RemoveAll(monitor=>monitor.Id == monitorId);
+            _context.Monitores.Remove(monitor);
             return true;
         }
 
         public IEnumerable<MonitorModel> GetAllMonitor()
         {
-            return _monitores;
+            return _context.Monitores.Include(m=>m.Oficina);
         }
 
         public MonitorModel? GetMonitorById(int id)
         {
-            return _monitores.FirstOrDefault(monitor=>monitor.Id==id);
+            return _context.Monitores.Include(m=>m.Oficina).FirstOrDefault(monitor=>monitor.Id==id);
         }
     }
 }

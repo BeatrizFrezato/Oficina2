@@ -1,3 +1,5 @@
+create database dbllp;
+
 -- Tabela: Professor
 CREATE TABLE Professor (
     Id SERIAL PRIMARY KEY,

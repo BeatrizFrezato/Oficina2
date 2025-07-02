@@ -50,7 +50,8 @@ namespace ELLP_Project.Services
 
         public List<FaltaModel> GetFaltasByAluno(int alunoId)
         {
-            if()
+            if (_alunoRepositorio.GetAlunoById(alunoId) == null)
+                throw new ArgumentException("Não existe aluno com esse ID.");
             return _faltaRepositorio.GetFaltaByAluno(alunoId);
         }
 

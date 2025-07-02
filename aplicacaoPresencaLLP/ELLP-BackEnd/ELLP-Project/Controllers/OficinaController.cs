@@ -136,28 +136,41 @@ namespace ELLP_Project.Controllers
             }
         }
 
-        [HttpDelete("{id}/aluno/{alunoId}")]
+        [HttpDelete("RemoverAlunoMatriculado/{id}")]
         public IActionResult RemoverAluno(int id, int alunoId)
         {
-            var oficina = _oficinaRepositorio.GetOficinaById(id);
-            if (oficina == null)
-                return NotFound();
-
-            oficina.RemoverAlunoOficina(alunoId);
-            _oficinaRepositorio.AtualizarOficina(id, oficina);
-            return NoContent();
+            try
+            {
+                _oficinaServices.RemoverAlunoMatriculado(id, alunoId);
+                return Ok("Aluno removido da oficina.");
+            }
+            catch(ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, "Erro interno: " + ex.Message);
+            }
         }
 
-        [HttpDelete("{id}/monitor/{monitorId}")]
+        [HttpDelete("RemoverMonitor/{id}")]
         public IActionResult RemoverMonitor(int id, int monitorId)
         {
-            var oficina = _oficinaRepositorio.GetOficinaById(id);
-            if (oficina == null)
-                return NotFound();
-
-            oficina.RemoverMonitorOficina(monitorId);
-            _oficinaRepositorio.AtualizarOficina(id, oficina);
-            return NoContent();
+            try
+            {
+                _oficinaServices.RemoverMonitor(id, monitorId);
+                return Ok("Monitor desligado da oficina.");
+            }
+            catch(ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, "Erro interno: " + ex.Message);
+            }
         }
+
     }
 }

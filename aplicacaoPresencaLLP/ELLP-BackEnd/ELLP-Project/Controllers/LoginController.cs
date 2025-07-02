@@ -1,6 +1,5 @@
 ﻿using ELLP_Project.Models;
 using ELLP_Project.Services;
-using ELLP_Project.Interfaces.InterfacesServices;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ELLP_Project.Controllers
@@ -11,24 +10,26 @@ namespace ELLP_Project.Controllers
     {
         private readonly LoginServices _loginServices;
 
-        public LoginController(ILoginServices loginServices)
+        public LoginController(LoginServices loginServices)
         {
             _loginServices = loginServices;
         }
 
         [HttpPost]
-        public IActionResult Login([FromBody] LoginModel login)
-        {
-            var resultado = _loginServices.Autenticar(login);
-
-            if (resultado == null)
-                return Unauthorized("Login ou senha inválidos.");
-
-            return Ok(new
+        public IActionResult AutenticacaoUsuario([FromBody] LoginModel login) { 
+            try
             {
-                mensagem = "Login realizado com sucesso!",
-                perfil = resultado.Value.perfil
-            });
+                _loginServices.ValidaçãoLogin(login.login, login.senha);
+                return NoContent();
+            }
+            catch(ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, "Erro interno: " + ex.Message);
+            }   
         }
     }
 }

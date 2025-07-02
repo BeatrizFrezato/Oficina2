@@ -21,7 +21,11 @@ namespace ELLP_Project.Services
             
             if(professor == null)
             {
-                throw new Exception("Não existe professor com esse ID");
+                throw new ArgumentException("Não existe professor com esse ID");
+            }
+            if (string.IsNullOrWhiteSpace(login))
+            {
+                throw new ArgumentException("O campo login não pode estar vazio.");
             }
 
             professor.Login = login;
@@ -36,7 +40,7 @@ namespace ELLP_Project.Services
             ProfessorModel professorAtual = _professorRepositorio.GetProfessorById(ProfessorId);
             if(professorAtual == null)
             {
-                throw new Exception("Não existe professor com esse ID");
+                throw new ArgumentException("Não existe professor com esse ID");
             }
 
             if(professor.SenhaHash == null)
@@ -63,8 +67,11 @@ namespace ELLP_Project.Services
             ProfessorModel professor = _professorRepositorio.GetProfessorById(professorId);
             if(professor == null)
             {
-                throw new Exception("Professor não existe.");
+                throw new ArgumentException("Professor não existe.");
             }
+
+            if (string.IsNullOrWhiteSpace(senha))
+                throw new ArgumentException("O campo senha não pode estar vazio.");
 
             professor.Salt = PasswordUtils.CriarSalt();
             professor.SenhaHash = PasswordUtils.GerarHash(senha, professor.Salt);
@@ -94,6 +101,9 @@ namespace ELLP_Project.Services
 
         public ProfessorModel? GetProfessorById(int professorId)
         {
+            if (_professorRepositorio.GetProfessorById(professorId) == null)
+                throw new ArgumentException("Não existe professor com esse ID.");
+
             return _professorRepositorio.GetProfessorById(professorId);
         }
 
@@ -104,6 +114,8 @@ namespace ELLP_Project.Services
 
         public bool RemoverProfessor(int professorId)
         {
+            if (_professorRepositorio.GetProfessorById(professorId) == null)
+                throw new ArgumentException("Não existe professor com esse ID.");
             return _professorRepositorio.DeleteProfessor(professorId);
         }
 

@@ -9,11 +9,13 @@ namespace ELLP_Project.Services
 
         private readonly OficinaRepositorio _oficinaRepositorio;
         private readonly ProfessorRepositorio _professorRepositorio;
+        private readonly MonitorRepositorio _monitorRepositorio;
 
-        public OficinaServices(OficinaRepositorio oficinaRepositorio, ProfessorRepositorio professorRepositorio)
+        public OficinaServices(OficinaRepositorio oficinaRepositorio, ProfessorRepositorio professorRepositorio, MonitorRepositorio monitorRepositorio)
         {
             _oficinaRepositorio = oficinaRepositorio;
             _professorRepositorio = professorRepositorio;
+            _monitorRepositorio = monitorRepositorio;
         }
 
         public OficinaModel AtualizarOficina(int OficinaId, OficinaModel oficina)
@@ -95,6 +97,19 @@ namespace ELLP_Project.Services
             if (professor == null)
                 throw new ArgumentException("Não existe professor com esse ID.");
             return _oficinaRepositorio.AlterarProfessor(oficinaId, professor);
+        }
+
+        public bool RemoverMonitor(int oficinaId, int monitorId)
+        {
+            MonitorModel monitor = _monitorRepositorio.GetMonitorById(monitorId);
+            if (monitor == null)
+                throw new ArgumentException("Não existe monitor com esse ID.");
+            OficinaModel oficina = _oficinaRepositorio.GetOficinaById(oficinaId);
+            if (oficina == null)
+                throw new ArgumentException("Não existe oficina com esse ID.");
+            _oficinaRepositorio.RemoverMonitor(oficinaId, monitorId);
+
+            return true;
         }
     }
 }

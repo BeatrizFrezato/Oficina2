@@ -100,7 +100,7 @@ namespace ELLP_Project.Controllers
                 return StatusCode(500, "Erro interno: " + ex.Message);
             }
         }
-
+        [HttpGet("FaltasPorAluno/{id}")]
         public ActionResult<List<FaltaModel>> FaltasPorAluno(int alunoId)
         {
             try

@@ -18,8 +18,16 @@ namespace ELLP_Project.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<FaltaModel>> GetAll()
         {
-            var faltas = _faltaServices.GetFaltas();
-            return Ok(faltas);
+            try
+            {
+                var faltas = _faltaServices.GetFaltas();
+                return Ok(faltas);
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, "Erro interno: "+ex.Message);
+            }
+
         }
 
         [HttpGet("{id}")]
@@ -33,39 +41,77 @@ namespace ELLP_Project.Controllers
             {
                 return BadRequest(ex.Message);
             }
+            catch(Exception ex)
+            {
+                return StatusCode(500, "Erro interno: " + ex.Message);
+            }
             
         }
 
         [HttpPost]
-        public ActionResult Add([FromBody] FaltaModel falta)
+        public ActionResult CreateFalta([FromBody] FaltaModel falta)
         {
-            if (falta == null)
-                return BadRequest();
-
-            _faltaRepositorio.AdicionarFalta(falta);
-            return CreatedAtAction(nameof(GetById), new { id = falta.FaltaId }, falta);
+            try
+            {
+                _faltaServices.CadastrarFalta(falta);
+                return CreatedAtAction(nameof(GetById), new { id = falta.FaltaId }, falta);
+            }
+            catch (ArgumentException ex) 
+            {
+                return BadRequest(ex.Message);
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, "Erro interno: " + ex.Message);
+            }
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("atualizarFalta/{id}")]
         public ActionResult Update(int id, [FromBody] FaltaModel falta)
         {
-            var existing = _faltaRepositorio.GetFaltaById(id);
-            if (existing == null)
-                return NotFound();
-
-            _faltaRepositorio.AtualizarFalta(id, falta);
-            return NoContent();
+            try
+            {
+                return Ok(_faltaServices.AtualizarFalta(id, falta));
+            }
+            catch(ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, "Erro interno: " + ex.Message);
+            }
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("ExcluirFalta/{id}")]
         public ActionResult Delete(int id)
         {
-            var falta = _faltaRepositorio.GetFaltaById(id);
-            if (falta == null)
-                return NotFound();
-
-            _faltaRepositorio.RemoverFalta(id);
-            return NoContent();
+            try
+            {
+                _faltaServices.RemoverFalta(id);
+                return NoContent();
+            }
+            catch(ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, "Erro interno: " + ex.Message);
+            }
         }
+        [HttpGet("FaltasPorAluno/{id}")]
+        public ActionResult<List<FaltaModel>> FaltasPorAluno(int alunoId)
+        {
+            try
+            {
+                return Ok(_faltaServices.GetFaltasByAluno(alunoId));
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, "Erro interno: " + ex.Message);
+            }
+        }
+
     }
 }

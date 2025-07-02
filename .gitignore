@@ -1,7 +1,7 @@
 # Visual Studio
 .vs/
-*.user
 *.suo
+*.user
 *.userosscache
 *.sln.docstates
 
@@ -15,27 +15,31 @@ obj/
 # Logs
 *.log
 
-# NuGet packages
+# NuGet
 *.nupkg
 *.snupkg
 packages/
 
 # Publish output
 publish/
-
-# Arquivos de configuração locais do Visual Studio Code
+# VS Code settings folder
 .vscode/
 
-# Arquivos temporários
+# Temporary files
 *.tmp
 *.temp
 
-# Resposta de cache do Swagger
+# Swagger cache
 swagger.json
 
-# Outros arquivos gerados
+# Entity Framework
 *.dbmdl
 
-# Ignore arquivos do sistema operacional
+# OS files
 Thumbs.db
 .DS_Store
+
+# Arquivos especÃƒÂ­ficos do Visual Studio DesignTime build
+.aplicacaoPresencaLLP/ELLP-BackEnd/.vs/
+.aplicacaoPresencaLLP/ELLP-BackEnd/ELLP-Project/obj/
+

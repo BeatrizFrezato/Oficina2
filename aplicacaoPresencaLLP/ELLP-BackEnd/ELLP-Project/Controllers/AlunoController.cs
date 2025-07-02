@@ -140,7 +140,7 @@ namespace ELLP_Project.Controllers
                 return BadRequest(ex.Message);
             }
             catch(Exception ex)
-            {
+            {                                                                               
                 return StatusCode(500, "Erro Interno: " + ex.Message);
             }
         }

@@ -1,15 +1,39 @@
 using ELLP_Project.Models;
 using ELLP_Project.Services;
 using ELLP_Project.Interfaces.InterfacesServices;
+using ELLP_Project.Persistence.Interfaces.InterfacesRepositorio;
+using ELLP_Project.Persistence.Interfaces.InterfacesServices;
+using ELLP_Project.Persistence.Repositorios;
 
 var builder = WebApplication.CreateBuilder(args);
 
 
 
-// Add services to the container.
-builder.Services.AddSingleton<>();
-builder.Services.AddControllers();
+builder.Services.AddSingleton<IAlunoRepositorio, AlunoRepositorio>();
+builder.Services.AddSingleton<IMonitorRepositorio, MonitorRepositorio>();
+builder.Services.AddSingleton<IProfessorRepositorio, ProfessorRepositorio>();
+builder.Services.AddSingleton<IFaltaRepositorio, FaltaRepositorio>();
+
+// Repositórios - Concretos (usados diretamente nos Services)
+builder.Services.AddSingleton<AlunoRepositorio>();
+builder.Services.AddSingleton<MonitorRepositorio>();
+builder.Services.AddSingleton<ProfessorRepositorio>();
+builder.Services.AddSingleton<FaltaRepositorio>();
+builder.Services.AddSingleton<OficinaRepositorio>();
+
+// Services - Interfaces
+builder.Services.AddSingleton<IAlunoServices, AlunoServices>();
+builder.Services.AddSingleton<IMonitorServices, MonitorServices>();
+builder.Services.AddSingleton<IOficinaServices, OficinaServices>();
 builder.Services.AddScoped<ILoginServices, LoginServices>();
+builder.Services.AddSingleton<IProfessorServices, ProfessorServices>();
+
+// Services - Concretos usados diretamente
+builder.Services.AddSingleton<MonitorServices>();
+builder.Services.AddSingleton<OficinaServices>();
+builder.Services.AddSingleton<ProfessorServices>();
+builder.Services.AddControllers();
+
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

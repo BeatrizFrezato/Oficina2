@@ -18,7 +18,7 @@ namespace ELLP_Project.Services
         public FaltaModel AtualizarFalta(int FaltaId, FaltaModel falta)
         {
             if (_faltaRepositorio.GetFaltaById(FaltaId) == null)
-                throw new Exception("Não foi encontrado nenhuma falta com esse ID.");
+                throw new ArgumentException("Não foi encontrado nenhuma falta com esse ID.");
             if (falta.DataFalta == null)
                 falta.DataFalta = _faltaRepositorio.GetFaltaById(FaltaId).DataFalta;
 
@@ -29,9 +29,9 @@ namespace ELLP_Project.Services
         {
             falta.Aluno = _alunoRepositorio.GetAlunoById(falta.AlunoId);
             if (falta.Aluno == null)
-                throw new Exception("Não existe aluno com o ID informado");
+                throw new ArgumentException("Não existe aluno com o ID informado");
             if (falta.DataFalta == null)
-                throw new Exception("Data não preenchida");
+                throw new ArgumentException("Data não preenchida");
 
             return _faltaRepositorio.AdicionarFalta(falta);
         }
@@ -50,11 +50,15 @@ namespace ELLP_Project.Services
 
         public List<FaltaModel> GetFaltasByAluno(int alunoId)
         {
+            if (_alunoRepositorio.GetAlunoById(alunoId) == null)
+                throw new ArgumentException("Não existe aluno com esse ID.");
             return _faltaRepositorio.GetFaltaByAluno(alunoId);
         }
 
         public bool RemoverFalta(int faltaId)
         {
+            if(_faltaRepositorio.GetFaltaById(faltaId)==null)
+                throw new ArgumentException("Não existe falta com esse ID.");
             return _faltaRepositorio.RemoverFalta(faltaId); 
         }
     }

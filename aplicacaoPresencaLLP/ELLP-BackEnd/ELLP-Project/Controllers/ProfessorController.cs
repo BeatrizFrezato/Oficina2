@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using ELLP_Project.Models;
-using ELLP_Project.Interfaces.InterfacesRepositorio;
+using ELLP_Project.Services;
 
 namespace ELLP_Project.Controllers
 {
@@ -8,67 +8,132 @@ namespace ELLP_Project.Controllers
     [Route("api/[controller]")]
     public class ProfessorController : ControllerBase
     {
-        private readonly IProfessorRepositorio _professorRepositorio;
+        private readonly ProfessorServices _professorServices;
 
-        public ProfessoresController(IProfessorRepositorio professorRepositorio)
+        public ProfessorController(ProfessorServices professorServices)
         {
-            _professorRepositorio = professorRepositorio;
+            _professorServices = professorServices;
         }
 
         [HttpGet]
         public ActionResult<IEnumerable<ProfessorModel>> GetAll()
         {
-            var professores = _professorRepositorio.GetAllProfessores();
-            return Ok(professores);
+            try
+            {
+                return Ok(_professorServices.GetProfessores());
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, "Erro interno: " + ex.Message);
+            }
         }
 
         [HttpGet("{id}")]
         public ActionResult<ProfessorModel> GetById(int id)
         {
-            var professor = _professorRepositorio.GetProfessorById(id);
-            if (professor == null)
+            try
             {
-                return NotFound($"Professor com ID {id} não encontrado.");
+                return Ok(_professorServices.GetProfessorById(id));
             }
-            return Ok(professor);
+            catch(ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, "Erro interno: " + ex.Message);
+            }
         }
 
         [HttpPost]
         public ActionResult AdicionarProfessor([FromBody] ProfessorModel professor)
         {
-            if (professor == null)
+            try
             {
-                return BadRequest("Dados do professor inválidos.");
+                _professorServices.CadastrarProfessor(professor);
+                return Ok("Professor cadastrado.");
             }
-
-            _professorRepositorio.AdicionarProfessor(professor);
-            return CreatedAtAction(nameof(GetById), new { id = professor.Id }, professor);
+            catch(ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, "Erro interno: " + ex.Message);
+            }
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("AtualizarProfessor/{id}")]
         public ActionResult AtualizarProfessor(int id, [FromBody] ProfessorModel professorAtualizado)
         {
-            var professorExistente = _professorRepositorio.GetProfessorById(id);
-            if (professorExistente == null)
+            try
             {
-                return NotFound($"Professor com ID {id} não encontrado.");
+                return Ok(_professorServices.AtualizarProfessor(id, professorAtualizado));
             }
-
-            _professorRepositorio.AlterarProfessor(id, professorAtualizado);
-            return NoContent();
+            catch(ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, "Erro interno: " + ex.Message);
+            }
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("ExcluirProfessor/{id}")]
         public ActionResult DeletarProfessor(int id)
         {
-            var professor = _professorRepositorio.GetProfessorById(id);
-            if (professor == null)
+            try
             {
-                return NotFound($"Professor com ID {id} não encontrado.");
+                _professorServices.RemoverProfessor(id);
+                return Ok("Professor excluído.");
             }
-
-            _professorRepositorio.DeleteProfessor(id);
-            return NoContent();
+            catch(ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, "Erro interno: " + ex.Message);
+            }
         }
+
+        [HttpPut("AlterarSenha/{id}")]
+        public IActionResult AlterarSenha(int id, [FromBody] string senha)
+        {
+            try
+            {
+                _professorServices.AtualizarSenha(id, senha);
+                return Ok("Senha atualizada.");
+            }
+            catch(ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, "Erro interno: " + ex.Message);
+            }
+        }
+
+        [HttpPut("AlterarLogin{id}")]
+        public IActionResult AlterarLogin(int professorId, [FromBody] string login)
+        {
+            try
+            {
+                _professorServices.AtualizarLogin(professorId, login);
+                return Ok("Login atualizado.");
+            }
+            catch(ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, "Erro interno: " + ex.Message);
+            }
+        }
+
+
     }
 }

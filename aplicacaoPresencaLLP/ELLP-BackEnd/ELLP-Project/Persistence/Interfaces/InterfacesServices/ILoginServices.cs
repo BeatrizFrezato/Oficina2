@@ -4,6 +4,6 @@ namespace ELLP_Project.Interfaces.InterfacesServices
 {
     public interface ILoginServices
     {
-        (bool sucesso, string perfil)? Autenticar(LoginModel login);
+        public bool ValidaçãoLogin(string login, string senha);
     }
 }

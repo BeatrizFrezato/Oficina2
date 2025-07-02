@@ -49,5 +49,17 @@ namespace ELLP_Project.Persistence.Repositorios
         {
             return _oficina.FirstOrDefault(of => of.OficinaId == oficinaId);
         }
+
+        public OficinaModel AlterarProfessor(int oficinaId, ProfessorModel professor)
+        {
+            OficinaModel oficina = _oficina.FirstOrDefault(of=> of.OficinaId== oficinaId);
+            oficina.AlterarProfessorOficina(professor);
+            return oficina;
+        }
+
+        public bool RemoverMonitor(int oficinaId, int monitorId)
+        {
+            return _oficina.FirstOrDefault(of=> of.OficinaId==oficinaId).RemoverMonitorOficina(monitorId);
+        }
     }
 }

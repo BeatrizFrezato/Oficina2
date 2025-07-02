@@ -1,55 +1,44 @@
 ﻿using ELLP_Project.Models;
-using ELLP_Project.Interfaces.InterfacesRepositorio;
 using ELLP_Project.Interfaces.InterfacesServices;
+using ELLP_Project.Persistence.Repositorios;
 using System.Security.Cryptography;
 using System.Text;
+using ELLP_Project.Utils;
 
 namespace ELLP_Project.Services
 {
     public class LoginServices : ILoginServices
     {
-        private readonly IAlunoRepositorio _alunoRepositorio;
-        private readonly IMonitorRepositorio _monitorRepositorio;
-        private readonly IProfessorRepositorio _professorRepositorio;
+        private readonly MonitorServices _monitorServices;
+        private readonly ProfessorServices _professorServices;
 
         public LoginServices(
-            IAlunoRepositorio alunoRepositorio,
-            IMonitorRepositorio monitorRepositorio,
-            IProfessorRepositorio professorRepositorio)
+            MonitorServices monitorServices,
+            ProfessorServices professorServices)
         {
-            _alunoRepositorio = alunoRepositorio;
-            _monitorRepositorio = monitorRepositorio;
-            _professorRepositorio = professorRepositorio;
+            _monitorServices = monitorServices;
+            _professorServices = professorServices;
         }
 
-        public (bool sucesso, string perfil)? Autenticar(LoginModel login)
+        public bool ValidaçãoLogin(string login, string senha)
         {
-            var aluno = _alunoRepositorio.GetAllAlunos()
-                .FirstOrDefault(a => a.Login == login.Login);
-            if (aluno != null && ValidarSenha(login.Senha, aluno.Salt, aluno.SenhaHash))
-                return (true, "aluno");
+            if (string.IsNullOrWhiteSpace(login))
+                throw new ArgumentNullException("Campo login não pode estar vazio");
+            if (string.IsNullOrWhiteSpace(senha))
+                throw new ArgumentNullException("Campo senha não pode estar vazio.");
 
-            var monitor = _monitorRepositorio.GetAllMonitor()
-                .FirstOrDefault(m => m.Login == login.Login);
-            if (monitor != null && ValidarSenha(login.Senha, monitor.Salt, monitor.SenhaHash))
-                return (true, "monitor");
+            var user = _monitorServices.GetMonitors().FirstOrDefault(m => m.Login == login);
+           
+            var user1 = _professorServices.GetProfessores().FirstOrDefault(p => p.Login == login);
+            if (user == null && user1 == null)
+                throw new ArgumentNullException("Login informado é inválido.");
+            else if (user1 != null)
+                PasswordUtils.ValidarSenha(senha, user1.Salt, user1.SenhaHash);
+            else if (user != null)
+                PasswordUtils.ValidarSenha(senha, user.Salt, user.SenhaHash);
 
-            var professor = _professorRepositorio.GetAllProfessores()
-                .FirstOrDefault(p => p.Login == login.Login);
-            if (professor != null && ValidarSenha(login.Senha, professor.Salt, professor.SenhaHash))
-                return (true, "professor");
-
-            return null;
+            return true;
         }
 
-        private bool ValidarSenha(string senhaDigitada, string salt, string senhaHashCorreta)
-        {
-            using var sha256 = SHA256.Create();
-            var senhaComSalt = senhaDigitada + salt;
-            var senhaBytes = Encoding.UTF8.GetBytes(senhaComSalt);
-            var hashBytes = sha256.ComputeHash(senhaBytes);
-            var hashDigitada = Convert.ToBase64String(hashBytes);
-            return hashDigitada == senhaHashCorreta;
-        }
     }
 }

@@ -82,6 +82,9 @@ namespace ELLP_Project.Services
 
         public MonitorModel? GetMonitorById(int monitorId)
         {
+            if (_monitorRepositorio.GetMonitorById(monitorId) == null)
+                throw new ArgumentException("Não existe monitor com esse ID.");
+
             return _monitorRepositorio.GetMonitorById(monitorId);
         }
 
@@ -92,6 +95,8 @@ namespace ELLP_Project.Services
 
         public bool RemoverMonitor(int monitorId)
         {
+            if (_monitorRepositorio.GetMonitorById(monitorId) == null)
+                throw new ArgumentException("Não existe monitor com esse ID.");
             return _monitorRepositorio.DeleteMonitor(monitorId);
         }
 

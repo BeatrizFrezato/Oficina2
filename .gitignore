@@ -22,7 +22,6 @@ packages/
 
 # Publish output
 publish/
-
 # VS Code settings folder
 .vscode/
 
@@ -40,6 +39,7 @@ swagger.json
 Thumbs.db
 .DS_Store
 
-# Arquivos específicos do Visual Studio DesignTime build
+# Arquivos especÃ­ficos do Visual Studio DesignTime build
 .aplicacaoPresencaLLP/ELLP-BackEnd/.vs/
 .aplicacaoPresencaLLP/ELLP-BackEnd/ELLP-Project/obj/
+
